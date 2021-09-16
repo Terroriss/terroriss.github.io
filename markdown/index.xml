@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sử dụng Markdown cơ bản on Minh Long</title>
+    <link>https://terroriss.github.io/markdown/</link>
+    <description>Recent content in Sử dụng Markdown cơ bản on Minh Long</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi</language>
+    <lastBuildDate>Thu, 16 Sep 2021 21:27:20 +0700</lastBuildDate><atom:link href="https://terroriss.github.io/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giới thiệu</title>
+      <link>https://terroriss.github.io/markdown/gioi-thieu/</link>
+      <pubDate>Thu, 16 Sep 2021 21:27:20 +0700</pubDate>
+      
+      <guid>https://terroriss.github.io/markdown/gioi-thieu/</guid>
+      <description>Markdown là gì? Markdown là ngôn ngữ đánh dấu văn bản đơn giản, được sử dụng phổ biến như dùng để viết tập tin README, viết tin nhắn trên diễn đàn, viết bài trên blog (ví dụ như blog này).
+Tại sao lại sử dụng Mardown?  Markdown có cú pháp đơn giản dễ nhớ, dễ học. Khi sử dụng cần gõ ít ký tự, tăng tốc độ đánh máy. Có thể chuyển đầu ra dưới định dạng XHTML.</description>
+    </item>
+    
+  </channel>
+</rss>
