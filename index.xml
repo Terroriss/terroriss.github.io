@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Minh Long</title>
-    <link>http://minhlong.site/</link>
+    <link>https://minhlong.site/</link>
     <description>Recent content on Minh Long</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
-    <lastBuildDate>Wed, 15 Sep 2021 20:28:41 +0700</lastBuildDate><atom:link href="http://minhlong.site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Sep 2021 20:28:41 +0700</lastBuildDate><atom:link href="https://minhlong.site/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Giới thiệu</title>
-      <link>http://minhlong.site/markdown/gioi-thieu/</link>
+      <link>https://minhlong.site/markdown/gioi-thieu/</link>
       <pubDate>Thu, 16 Sep 2021 21:27:20 +0700</pubDate>
       
-      <guid>http://minhlong.site/markdown/gioi-thieu/</guid>
+      <guid>https://minhlong.site/markdown/gioi-thieu/</guid>
       <description>Markdown là gì? Markdown là ngôn ngữ đánh dấu văn bản đơn giản, được sử dụng phổ biến như dùng để viết tập tin README, viết tin nhắn trên diễn đàn, viết bài trên blog (ví dụ như blog này).
 Tại sao lại sử dụng Mardown?  Markdown có cú pháp đơn giản dễ nhớ, dễ học. Khi sử dụng cần gõ ít ký tự, tăng tốc độ đánh máy. Có thể chuyển đầu ra dưới định dạng XHTML.</description>
     </item>
     
     <item>
       <title>Html bai 1</title>
-      <link>http://minhlong.site/contact/</link>
+      <link>https://minhlong.site/contact/</link>
       <pubDate>Wed, 15 Sep 2021 21:49:13 +0700</pubDate>
       
-      <guid>http://minhlong.site/contact/</guid>
+      <guid>https://minhlong.site/contact/</guid>
       <description>About me</description>
     </item>
     

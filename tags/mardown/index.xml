@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mardown on Minh Long</title>
-    <link>http://minhlong.site/tags/mardown/</link>
+    <link>https://minhlong.site/tags/mardown/</link>
     <description>Recent content in mardown on Minh Long</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>vi</language>
-    <lastBuildDate>Thu, 16 Sep 2021 21:27:20 +0700</lastBuildDate><atom:link href="http://minhlong.site/tags/mardown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Sep 2021 21:27:20 +0700</lastBuildDate><atom:link href="https://minhlong.site/tags/mardown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sử dụng Markdown cơ bản</title>
-      <link>http://minhlong.site/markdown/</link>
+      <link>https://minhlong.site/markdown/</link>
       <pubDate>Thu, 16 Sep 2021 21:27:20 +0700</pubDate>
       
-      <guid>http://minhlong.site/markdown/</guid>
+      <guid>https://minhlong.site/markdown/</guid>
       <description>Sử dụng Markdown cơ bản </description>
     </item>
     
