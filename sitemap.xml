@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://terroriss.github.io/markdown/</loc>
+    <loc>http://minhlong.site/markdown/</loc>
     <lastmod>2021-09-16T21:27:20+07:00</lastmod>
   </url><url>
-    <loc>https://terroriss.github.io/markdown/gioi-thieu/</loc>
+    <loc>http://minhlong.site/markdown/gioi-thieu/</loc>
     <lastmod>2021-09-16T21:27:20+07:00</lastmod>
   </url><url>
-    <loc>https://terroriss.github.io/markdown/dinh-dang-van-ban/</loc>
+    <loc>http://minhlong.site/tags/mardown/</loc>
     <lastmod>2021-09-16T21:27:20+07:00</lastmod>
   </url><url>
-    <loc>https://terroriss.github.io/contact/</loc>
+    <loc>http://minhlong.site/tags/syntax/</loc>
+    <lastmod>2021-09-16T21:27:20+07:00</lastmod>
+  </url><url>
+    <loc>http://minhlong.site/tags/</loc>
+    <lastmod>2021-09-16T21:27:20+07:00</lastmod>
+  </url><url>
+    <loc>http://minhlong.site/markdown/dinh-dang-van-ban/</loc>
+    <lastmod>2021-09-16T21:27:20+07:00</lastmod>
+  </url><url>
+    <loc>http://minhlong.site/contact/</loc>
     <lastmod>2021-09-15T21:49:13+07:00</lastmod>
   </url><url>
-    <loc>https://terroriss.github.io/</loc>
+    <loc>http://minhlong.site/</loc>
     <lastmod>2021-09-15T20:28:41+07:00</lastmod>
   </url><url>
-    <loc>https://terroriss.github.io/categories/</loc>
-  </url><url>
-    <loc>https://terroriss.github.io/tags/</loc>
+    <loc>http://minhlong.site/categories/</loc>
   </url>
 </urlset>

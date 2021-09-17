@@ -114,3 +114,10 @@ p {
   --offset: 9;
   z-index: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-gap: 28px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}

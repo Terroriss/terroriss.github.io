@@ -1,49 +1,63 @@
 [
 {
-	"uri": "https://terroriss.github.io/markdown/",
+	"uri": "http://minhlong.site/markdown/",
 	"title": "Sử dụng Markdown cơ bản",
-	"tags": [],
+	"tags": ["mardown", "syntax"],
 	"description": "",
 	"content": "Sử dụng Markdown cơ bản "
 },
 {
-	"uri": "https://terroriss.github.io/markdown/gioi-thieu/",
+	"uri": "http://minhlong.site/markdown/gioi-thieu/",
 	"title": "Giới thiệu",
 	"tags": [],
 	"description": "",
 	"content": "Markdown là gì? Markdown là ngôn ngữ đánh dấu văn bản đơn giản, được sử dụng phổ biến như dùng để viết tập tin README, viết tin nhắn trên diễn đàn, viết bài trên blog (ví dụ như blog này).\nTại sao lại sử dụng Mardown?  Markdown có cú pháp đơn giản dễ nhớ, dễ học. Khi sử dụng cần gõ ít ký tự, tăng tốc độ đánh máy. Có thể chuyển đầu ra dưới định dạng XHTML. Khả năng xảy ra lỗi thấp. Có thể bằng bất cứ trình soạn thảo văn bản nào mà bạn thích.  "
 },
 {
-	"uri": "https://terroriss.github.io/markdown/dinh-dang-van-ban/",
+	"uri": "http://minhlong.site/tags/mardown/",
+	"title": "mardown",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://minhlong.site/tags/syntax/",
+	"title": "syntax",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://minhlong.site/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://minhlong.site/markdown/dinh-dang-van-ban/",
 	"title": "Định dạng văn bản",
 	"tags": [],
 	"description": "",
 	"content": "1) Tiêu đề: Để tạo một tiêu đề, ta thêm dấu thăng (#) vào đầu dòng văn bản, ví dụ như sau:\n# h1 Heading ## h2 Heading ### h3 Heading #### h4 Heading ##### h5 Heading ###### h6 Heading Tương đương với các dòng sau trong HTML:\n\u0026lt;h1\u0026gt;h1 Heading\u0026lt;/h1\u0026gt; \u0026lt;h2\u0026gt;h2 Heading\u0026lt;/h2\u0026gt; \u0026lt;h3\u0026gt;h3 Heading\u0026lt;/h3\u0026gt; \u0026lt;h4\u0026gt;h4 Heading\u0026lt;/h4\u0026gt; \u0026lt;h5\u0026gt;h5 Heading\u0026lt;/h5\u0026gt; \u0026lt;h6\u0026gt;h6 Heading\u0026lt;/h6\u0026gt; Kết quả hiển thị: "
 },
 {
-	"uri": "https://terroriss.github.io/contact/",
+	"uri": "http://minhlong.site/contact/",
 	"title": "Html bai 1",
 	"tags": [],
 	"description": "",
 	"content": "About me\n"
 },
 {
-	"uri": "https://terroriss.github.io/",
+	"uri": "http://minhlong.site/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": "day la trang chinh\n"
 },
 {
-	"uri": "https://terroriss.github.io/categories/",
+	"uri": "http://minhlong.site/categories/",
 	"title": "Categories",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://terroriss.github.io/tags/",
-	"title": "Tags",
 	"tags": [],
 	"description": "",
 	"content": ""

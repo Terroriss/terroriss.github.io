@@ -1114,6 +1114,7 @@ pre .copy-to-clipboard:hover {
     color: white ;
     margin-top:1rem;
     padding-left: 1rem;
+    font-size: 1.5rem;
 }
 
 #homelinks {
