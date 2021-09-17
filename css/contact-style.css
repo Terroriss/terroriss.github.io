@@ -3,8 +3,8 @@
 }
  body {
 	 -webkit-font-smoothing: antialiased;
-	 overflow-y: scroll;
-	 overflow-x: hidden;
+	 overflow: hidden;
+	 overflow-y: scroll !important;
 }
 .contact-container {
     width: 90%;
@@ -171,6 +171,7 @@ ul {
 	 -webkit-backface-visibility: hidden;
 	 font-family: 'Ubuntu', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	 text-align: center;
+	 transform: translateY(-40px);
 }
  .deck__item {
 	 width: 100%;
@@ -257,7 +258,7 @@ ul {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%, -200px);
+    transform: translate(-50%, -240px);
     white-space: nowrap;
 }
  
@@ -282,7 +283,7 @@ ul {
     
     .contact-container > .right {
         transform: translate(50%, 500px);
-        
+        width: 100%;       
     }
 }
 

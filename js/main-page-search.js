@@ -2,9 +2,8 @@ var lunrIndex, pagesIndex;
 pagesIndex = [
     {
         "index": "1",
-        "title": "Game series",
-        "tags": ["lua", "game", "dev"],
-        "uri": "/game"
+        "title": "Markdown Cơ Bản",
+        "tags": ["markdown", "syntax", "purple-se"]
     }, 
 ]
 
@@ -44,7 +43,7 @@ function search(queryTerm) {
 
 function show_all_hidden() {
     var container = document.querySelector(".container");
-    var links = container.querySelectorAll("a")
+    var links = container.querySelectorAll(".article-block")
     for (let i = 0, len = links.length; i < len; ++i) {
         links[i].classList.remove("hidden");
     }
@@ -63,7 +62,7 @@ $( document ).ready(function() {
             search_result.forEach(function(res) {
                 result_index.push(res.index);
             })
-            var links = container.querySelectorAll("a");
+            var links = container.querySelectorAll(".article-block");
             for (let i = 0, len = links.length; i < len; ++i) {
                 let curr = links[i];
                 if (result_index.includes(curr.dataset.index))
