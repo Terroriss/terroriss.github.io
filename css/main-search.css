@@ -7,6 +7,7 @@
     top: 50%;
     transform: translateY(-50%);
     right: 0;
+    min-width: 200px;
 }
 .searchbox label {
     color: rgba(255, 255, 255, 0.8);
@@ -94,4 +95,11 @@
 
 .autocomplete-suggestion > .context {
     font-size: 12px;
+}
+
+@media screen and (max-width: 668px) {
+    .searchbox {
+        min-width: 50px;
+        width: 45%;
+    }
 }
