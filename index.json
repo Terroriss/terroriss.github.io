@@ -1,21 +1,28 @@
 [
 {
-	"uri": "https://minhlong.site/markdown/",
-	"title": "Sử dụng Markdown cơ bản",
-	"tags": ["mardown", "syntax"],
-	"description": "",
-	"content": "Sử dụng Markdown cơ bản "
-},
-{
 	"uri": "https://minhlong.site/markdown/gioi-thieu/",
 	"title": "Giới thiệu",
 	"tags": [],
 	"description": "",
-	"content": "Markdown là gì? Markdown là ngôn ngữ đánh dấu văn bản đơn giản, được sử dụng phổ biến như dùng để viết tập tin README, viết tin nhắn trên diễn đàn, viết bài trên blog (ví dụ như blog này).\nTại sao lại sử dụng Mardown?  Markdown có cú pháp đơn giản dễ nhớ, dễ học. Khi sử dụng cần gõ ít ký tự, tăng tốc độ đánh máy. Có thể chuyển đầu ra dưới định dạng XHTML. Khả năng xảy ra lỗi thấp. Có thể bằng bất cứ trình soạn thảo văn bản nào mà bạn thích.  "
+	"content": "Markdown là gì? Markdown là ngôn ngữ đánh dấu văn bản đơn giản, được sử dụng phổ biến như dùng để viết tập tin README, viết tin nhắn trên diễn đàn, viết bài trên blog (ví dụ như blog này).\nTại sao lại sử dụng Mardown?  Markdown có cú pháp đơn giản dễ nhớ, dễ học. Khi sử dụng cần gõ ít ký tự, tăng tốc độ đánh máy. Có thể chuyển đầu ra dưới định dạng chuẩn XHTML. Khả năng tạo ra lỗi thấp. Có thể viết bằng bất cứ trình soạn thảo văn bản nào mà bạn thích.  "
 },
 {
-	"uri": "https://minhlong.site/tags/mardown/",
-	"title": "mardown",
+	"uri": "https://minhlong.site/markdown/dinh-dang-van-ban/",
+	"title": "Định dạng văn bản",
+	"tags": [],
+	"description": "",
+	"content": "1) Tiêu đề: Để tạo một tiêu đề, ta thêm dấu thăng (#) vào đầu dòng văn bản, ví dụ như sau:\n# h1 Heading ## h2 Heading ### h3 Heading #### h4 Heading ##### h5 Heading ###### h6 Heading Tương đương với các dòng sau trong HTML:\n\u0026lt;h1\u0026gt;h1 Heading\u0026lt;/h1\u0026gt; \u0026lt;h2\u0026gt;h2 Heading\u0026lt;/h2\u0026gt; \u0026lt;h3\u0026gt;h3 Heading\u0026lt;/h3\u0026gt; \u0026lt;h4\u0026gt;h4 Heading\u0026lt;/h4\u0026gt; \u0026lt;h5\u0026gt;h5 Heading\u0026lt;/h5\u0026gt; \u0026lt;h6\u0026gt;h6 Heading\u0026lt;/h6\u0026gt; Kết quả hiển thị: h1 Heading\nh2 Heading\nh3 Heading\nh4 Heading\nh5 Heading\nh6 Heading\nNgoài ra, còn có thể sử dụng cú pháp sau để thể hiện tiêu đề h1 và h2:\nh1 Heading ========== h2 Heading ---------- Các lưu ý khi sử dụng tiêu đề:\n   ✓ Nên ✗ Không nên     # Tiêu đề đúng #Không được viết sát vào dấu thăng    Nên cách một dòng trước...\n# Tiêu đề\n...và sau tiêu đề   Nếu không cách thêm một dòng với\n# Tiêu đề\ntrong một số trường hợp sẽ hiển thị không như ý muốn     2) Đoạn văn bản: Để tách đoạn văn bản, ta thêm một dòng trống ở giữa hai đoạn:\nĐoạn văn bản thứ nhất. Đoạn văn bản thứ hai. Tương đương\n\u0026lt;p\u0026gt;Đoạn văn bản thứ nhất.\u0026lt;/p\u0026gt; \u0026lt;p\u0026gt;Đoạn văn bản thứ hai.\u0026lt;/p\u0026gt; Kết quả hiển thị:\nĐoạn văn bản thứ nhất.\nĐoạn văn bản thứ hai.\nLưu ý, trừ khi bạn sử dụng đoạn văn trong danh sách, không nên thêm dấu cách vào trước đoạn văn bản vì nó sẽ không hiển thị được như mong muốn.\n3) Xuống dòng: Để xuống dòng, ấn từ 2 dấu cách trở lên ở cuối dòng thứ nhất, sau đó ấn Enter:\n   Markdown HTML Kết quả      Dòng thứ nhất.\nDòng thứ hai.  \u0026lt;p\u0026gt;Dòng thứ nhất.\u0026lt;br\u0026gt;Dòng thứ hai.\u0026lt;/p\u0026gt;  Dòng thứ nhất.\nDòng thứ hai.     Lưu ý, phương pháp trên được hỗ trợ bởi đa số các ứng dụng, nhưng việc gỗ dấu cách ở cuối câu khiến người dùng dễ xảy ra sai sót. Ở các ứng dụng có hỗ trợ HTML, bạn có thể dùng \u0026lt;br\u0026gt; để xuống dòng.\n4) : "
+},
+{
+	"uri": "https://minhlong.site/markdown/",
+	"title": "Sử dụng Markdown cơ bản",
+	"tags": ["markdown", "syntax"],
+	"description": "",
+	"content": "Sử dụng Markdown cơ bản "
+},
+{
+	"uri": "https://minhlong.site/tags/markdown/",
+	"title": "markdown",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -33,13 +40,6 @@
 	"tags": [],
 	"description": "",
 	"content": ""
-},
-{
-	"uri": "https://minhlong.site/markdown/dinh-dang-van-ban/",
-	"title": "Định dạng văn bản",
-	"tags": [],
-	"description": "",
-	"content": "1) Tiêu đề: Để tạo một tiêu đề, ta thêm dấu thăng (#) vào đầu dòng văn bản, ví dụ như sau:\n# h1 Heading ## h2 Heading ### h3 Heading #### h4 Heading ##### h5 Heading ###### h6 Heading Tương đương với các dòng sau trong HTML:\n\u0026lt;h1\u0026gt;h1 Heading\u0026lt;/h1\u0026gt; \u0026lt;h2\u0026gt;h2 Heading\u0026lt;/h2\u0026gt; \u0026lt;h3\u0026gt;h3 Heading\u0026lt;/h3\u0026gt; \u0026lt;h4\u0026gt;h4 Heading\u0026lt;/h4\u0026gt; \u0026lt;h5\u0026gt;h5 Heading\u0026lt;/h5\u0026gt; \u0026lt;h6\u0026gt;h6 Heading\u0026lt;/h6\u0026gt; Kết quả hiển thị: "
 },
 {
 	"uri": "https://minhlong.site/contact/",
