@@ -16,5 +16,14 @@
       <description>Sử dụng Markdown cơ bản </description>
     </item>
     
+    <item>
+      <title>Sử dụng Python cơ bản</title>
+      <link>https://minhlong.site/django/</link>
+      <pubDate>Thu, 16 Sep 2021 21:27:20 +0700</pubDate>
+      
+      <guid>https://minhlong.site/django/</guid>
+      <description>Sử dụng Python cơ bản </description>
+    </item>
+    
   </channel>
 </rss>

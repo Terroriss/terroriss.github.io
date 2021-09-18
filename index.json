@@ -21,8 +21,22 @@
 	"content": "Sử dụng Markdown cơ bản "
 },
 {
+	"uri": "https://minhlong.site/django/",
+	"title": "Sử dụng Python cơ bản",
+	"tags": ["python", "syntax"],
+	"description": "",
+	"content": "Sử dụng Python cơ bản "
+},
+{
 	"uri": "https://minhlong.site/tags/markdown/",
 	"title": "markdown",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://minhlong.site/tags/python/",
+	"title": "python",
 	"tags": [],
 	"description": "",
 	"content": ""
