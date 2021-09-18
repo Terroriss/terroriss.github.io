@@ -115,6 +115,25 @@ p {
   z-index: 0;
 }
 
+.article-block {
+    position: relative;
+}
+
+.tag {
+    position: absolute; 
+    bottom: -15px; 
+    margin-left: 10px;
+}
+
+.child > p {
+    top: -16px;
+    right: 16px;
+}
+
+.child > h2 {
+    margin-top: 33px;
+}
+
 @media screen and (max-width: 768px) {
     .container {
         grid-gap: 28px;

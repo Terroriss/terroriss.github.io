@@ -18,15 +18,47 @@
 
     <title>   Minh Long</title>
     
-    <link href="/css/nucleus.css?1631895882" rel="stylesheet">
-    <link href="/css/main-style.css?1631895882" rel="stylesheet">
-    <link href="/css/main-nav-bar.css?1631895882" rel="stylesheet">
-    <link href="/css/main-search.css?1631895882" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1631895882" rel="stylesheet">
-    <script src="/js/jquery-3.3.1.min.js?1631895882"></script>
+    <link href="/css/nucleus.css?1631939546" rel="stylesheet">
+    <link href="/css/main-style.css?1631939546" rel="stylesheet">
+    <link href="/css/main-nav-bar.css?1631939546" rel="stylesheet">
+    <link href="/css/main-search.css?1631939546" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1631939546" rel="stylesheet">
+    <script src="/js/jquery-3.3.1.min.js?1631939546"></script>
     <style>
+        
         .child {
             color: #323232;
+            opacity: .8;
+        }
+        
+        .tag {
+            color: #999;
+            font-weight: bold;
+        }
+        
+        .tag > a {
+            background-color: #333;
+            border-radius: 3px;
+            padding: 2px;
+            opacity: .5;
+        }
+        
+        .child > p {
+            font-style: italic;
+            text-transform: uppercase;
+            font-size: 11px;
+            color: #333;
+            font-weight: bold;
+            opacity: .6;
+        }
+        
+        .tag > a {
+            font-size: 12px;
+	        font-weight: bold;
+	        color: #999;
+	        text-transform: uppercase;
+	        letter-spacing: 0.05em;
+	        margin: 1em 0 0 0;
         }
         
         .child > h2 {
@@ -67,24 +99,35 @@
     </div> 
 
     <div class="container highlightable" style="transform: translateY(25px); width: 100%;">
-        <div class="article-block" style="postion:relative;" data-index="1">
+        <div class="article-block" data-index="1">
         <a href="/markdown/">
-        <div class="card purple-series" style="--cards:2;">
-            <div class="child">
-                <h2>Markdown Cơ Bản</h2>
-                <p style="bottom: 15px;">2 Bài Viết</p>
+            <div class="card purple-series" style="--cards:2;">
+                <div class="child">
+                    <h2>Markdown Cơ Bản</h2>
+                    <p>2 Bài Viết</p>
+                </div>
+                <div class="child"></div>
             </div>
-            <div class="child"></div>
-        </div>
         </a>
-            <p style="position: absolute; bottom: -15px; margin-left: 10px;">Tags: <a href="/tags/markdown">Markdown</a>, <a href="/tags/syntax">Syntax</a></p>
+            <p class="tag"><a href="/tags/markdown">Markdown</a> <a href="/tags/syntax">Syntax</a></p>
         </div>
-        
+        <div class="article-block" data-index="1">
+        <a href="/markdown/">
+            <div class="card green-series" style="--cards:2;">
+                <div class="child">
+                    <h2>Markdown Cơ Bản</h2>
+                    <p>2 Bài Viết</p>
+                </div>
+                <div class="child"></div>
+            </div>
+        </a>
+            <p class="tag"><a href="/tags/markdown">Markdown</a> <a href="/tags/syntax">Syntax</a></p>
+        </div>
     </div>
     
     
-    <script type="text/javascript" src="/js/lunr.min.js?1631895882"></script>
-    <script type="text/javascript" src="/js/auto-complete.js?1631895882"></script>
-    <script type="text/javascript" src="/js/main-page-search.js?1631895882"></script>
+    <script type="text/javascript" src="/js/lunr.min.js?1631939546"></script>
+    <script type="text/javascript" src="/js/auto-complete.js?1631939546"></script>
+    <script type="text/javascript" src="/js/main-page-search.js?1631939546"></script>
 </body>
 </html>
