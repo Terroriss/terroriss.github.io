@@ -22,7 +22,7 @@
 
 body {
     font-size: 16px !important;
-    color: #323232 !important;
+    color: var(--text-color) !important;
 }
 
 #body a.highlight, #body a.highlight:hover, #body a.highlight:focus {

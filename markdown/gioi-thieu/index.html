@@ -19,23 +19,25 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Giới thiệu   Minh Long</title>
+    <title>Giới thiệu  |  Minh Long</title>
     
-    <link href="/css/nucleus.css?1632028685" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1632028685" rel="stylesheet">
-    <link href="/css/hybrid.css?1632028685" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1632028685" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1632028685" rel="stylesheet">
-    <link href="/css/auto-complete.css?1632028685" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1632028685" rel="stylesheet">
-    <link href="/css/theme.css?1632028685" rel="stylesheet">
-    <link href="/css/tabs.css?1632028685" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1632028685" rel="stylesheet">
+    <link href="/css/nucleus.css?1632057034" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1632057034" rel="stylesheet">
+    <link href="/css/hybrid.css?1632057034" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1632057034" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1632057034" rel="stylesheet">
+    <link href="/css/auto-complete.css?1632057034" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1632057034" rel="stylesheet">
+    <link href="/css/theme.css?1632057034" rel="stylesheet">
+    <link href="/css/tabs.css?1632057034" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1632057034" rel="stylesheet">
+    <link href="/css/dark-mode-btn.css?1632057034" rel="stylesheet">
+    <link id="mode" href="/css/light-mode.css?1632057034" rel="stylesheet">
     
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1632028685"></script>
+    <script src="/js/jquery-3.3.1.min.js?1632057034"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -43,6 +45,14 @@
       }
       #disqus_thread {
         overflow-x: hidden;
+      }
+      
+      .dark-toggle {
+        transform: scale(0.75);
+      }
+      
+      .dark-toggle:checked {
+        transform: scale(0.5625);
       }
       
     </style>
@@ -161,14 +171,14 @@ c26 -27 34 -85 22 -143 -36 -167 -55 -236 -91 -331 -17 -44 -35 -82 -39 -85
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1632028685"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1632028685"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1632057034"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1632057034"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/minhlong.site\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1632028685"></script>
+<script type="text/javascript" src="/js/search.js?1632057034"></script>
 
     
   </div>
@@ -307,10 +317,60 @@ c26 -27 34 -85 22 -143 -36 -167 -55 -236 -91 -331 -17 -44 -35 -82 -39 -85
 
         <section id="body">
         <div id="overlay"></div>
-        <div class="padding highlightable">
+        <div class="padding highlightable background">
               
-              <div>
-                <div id="top-bar">
+              <div id="top-bar-container">
+                <div id="top-bar" style="">
+                <div style="position: relative; height: 100%; display: inline-block; float: right;">
+                    <div style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%);">
+                        <input id="dark-toggle" class="dark-toggle" type="checkbox">
+<script>
+    const mode = localStorage.getItem("dark_mode");
+    const stylesheet = document.querySelector("#mode");
+    const dark_btn = document.querySelector("#dark-toggle");
+    if (mode) {
+        if (mode == "true") {
+            stylesheet.href = "/css/dark-mode.css";
+            dark_btn.checked = true;
+        } else {
+            stylesheet.href = "/css/light-mode.css";
+            dark_btn.checked = false;
+        }
+    } else {
+        const device_color = window.matchMedia("(prefers-color-scheme: dark)");
+        if (device_color.matches) dark_mode(true);
+        else dark_mode(false);
+    }
+    
+    function dark_mode(bool) {
+        if (bool) {
+            stylesheet.href = "/css/dark-mode.css";
+            localStorage.setItem("dark_mode", true);
+            dark_btn.checked = true;
+        } else {
+            stylesheet.href = "/css/light-mode.css";
+            localStorage.setItem("dark_mode", false);
+            dark_btn.checked = false;
+        }
+    }
+    
+    dark_btn.addEventListener("click", function() {
+        if (this.checked) dark_mode(true);
+        else dark_mode(false);
+        if (document.readyState == 'complete') {
+            sleep(1000).then(() => {
+            DISQUS.reset({ reload: true });
+            });
+        }
+    });
+    
+    function sleep (time) {
+        return new Promise((resolve) => setTimeout(resolve, time));
+    }
+</script>
+
+                    </div>
+                </div>
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -408,7 +468,7 @@ text-align: center;
 #share-buttons > div.mail > svg {height: 14px; margin-top: 11px;}
 </style>
 
-<span style="color: black;">Share on: </span><div id="share-buttons">
+<span style="color: var(--text-color, black);">Share on: </span><div id="share-buttons">
 <div class="facebook" title="Share this on Facebook" onclick="window.open('http://www.facebook.com/share.php?u=https:\/\/minhlong.site\/markdown\/gioi-thieu\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"/></svg></div>
 <div class="twitter" title="Share this on Twitter" onclick="window.open('http://twitter.com/intent/tweet?text=Giới thiệu&url=https:\/\/minhlong.site\/markdown\/gioi-thieu\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg></div>
 <div class="linkedin" title="Share this on Linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=https:\/\/minhlong.site\/markdown\/gioi-thieu\/&title=&summary=&source=');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></div>
@@ -555,19 +615,19 @@ text-align: center;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1632028685"></script>
-    <script src="/js/perfect-scrollbar.min.js?1632028685"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1632028685"></script>
-    <script src="/js/jquery.sticky.js?1632028685"></script>
-    <script src="/js/featherlight.min.js?1632028685"></script>
-    <script src="/js/highlight.pack.js?1632028685"></script>
+    <script src="/js/clipboard.min.js?1632057034"></script>
+    <script src="/js/perfect-scrollbar.min.js?1632057034"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1632057034"></script>
+    <script src="/js/jquery.sticky.js?1632057034"></script>
+    <script src="/js/featherlight.min.js?1632057034"></script>
+    <script src="/js/highlight.pack.js?1632057034"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1632028685"></script>
-    <script src="/js/learn.js?1632028685"></script>
-    <script src="/js/hugo-learn.js?1632028685"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1632057034"></script>
+    <script src="/js/learn.js?1632057034"></script>
+    <script src="/js/hugo-learn.js?1632057034"></script>
     
         
-            <script src="/mermaid/mermaid.js?1632028685"></script>
+            <script src="/mermaid/mermaid.js?1632057034"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
