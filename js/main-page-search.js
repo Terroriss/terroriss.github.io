@@ -100,7 +100,8 @@ $( document ).ready(function() {
         jQuery('[data-search-clear]').on('click', function() {
             jQuery('[data-search-input]').val('').trigger('input');
             sessionStorage.removeItem('search-input');
-            $(".highlightable").unhighlight({ element: 'mark' })
+            $(".highlightable").unhighlight({ element: 'mark' });
+            show_all_hidden();
         });
     });          
     $(".highlightable").highlight(sessionStorage.getItem('search-value'), { element: 'mark' });
