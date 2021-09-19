@@ -21,14 +21,59 @@
 
     <title>Liên hệ - Minh Long</title>
     
-    <link href="/css/main-style.css?1632057034" rel="stylesheet">
-    <link href="/css/main-nav-bar.css?1632057034" rel="stylesheet">
-    <link href="/css/contact-style.css?1632057034" rel="stylesheet">
-    <link href="/css/fontawesome.min.css?1632057034" rel="stylesheet">
+    <link href="/css/main-style.css?1632066818" rel="stylesheet">
+    <link href="/css/main-nav-bar.css?1632066818" rel="stylesheet">
+    <link href="/css/contact-style.css?1632066818" rel="stylesheet">
+    <link href="/css/fontawesome.min.css?1632066818" rel="stylesheet">
+    <link href="/css/dark-mode-btn.css?1632066818" rel="stylesheet">
+    <link href="/css/dark-mode.css?1632066818" rel="stylesheet">
     
   </head>
 
 <boby>
+    <div style="position: fixed; right: 20px; bottom: 30px;">
+        <input id="dark-toggle" class="dark-toggle" type="checkbox">
+<script>
+    const mode = localStorage.getItem("dark_mode");
+    const dark_btn = document.querySelector("#dark-toggle");
+    const bg = document.querySelector("body").classList
+    if (!bg.contains("background")) bg.add("background")
+    if (mode) {
+        if (mode == "true") {
+            bg.remove("light-mode")
+            dark_btn.checked = true;
+        } else {
+            bg.add("light-mode")
+            dark_btn.checked = false;
+        }
+    } else {
+        const device_color = window.matchMedia("(prefers-color-scheme: dark)");
+        if (device_color.matches) dark_mode(true);
+        else dark_mode(false);
+    }
+    
+    function dark_mode(bool) {
+        if (bool) {
+            bg.remove("light-mode")
+            localStorage.setItem("dark_mode", true);
+            dark_btn.checked = true;
+        } else {
+            bg.add("light-mode")
+            localStorage.setItem("dark_mode", false);
+            dark_btn.checked = false;
+        }
+    }
+       
+    dark_btn.addEventListener("click", function() {
+        const _bg = document.querySelector(".background").classList
+        if (!_bg.contains("background-transition"))
+            _bg.add("background-transition"); 
+        if (this.checked) dark_mode(true);
+        else dark_mode(false);
+    });
+</script>
+
+    </div>
     <div class="topnav" style="position: absolute; width: 100%; top: 0; left: 0;">
       <a href="../">Trang chủ</a>
       <a class="active" href="/">Liên hệ</a>

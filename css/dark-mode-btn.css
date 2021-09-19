@@ -22,8 +22,12 @@
 
 .background {
 	 background: var(--background);
-	 transition: background 500ms;
 }
+
+.background-transition {
+    transition: background 500ms;
+}
+
  .dark-toggle {
 	 z-index: 1;
 }

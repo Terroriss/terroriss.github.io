@@ -24,7 +24,8 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #f7fbfc;
-  color: #333;
+  background-color: var(--background);
+  color: var(--text-color);
+  transition: background 500ms;
 }
 

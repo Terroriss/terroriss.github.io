@@ -44,7 +44,7 @@
 }
 
 #contact {
-  background: #F9F9F9;
+  background: var(--contact-background);
   padding: 25px;
   margin: 0;
   padding-bottom: 35px;
@@ -89,7 +89,7 @@ fieldset {
   box-sizing: border-box;
   width: 100%;
   border: 1px solid #ccc;
-  background: #FFF;
+  background: var(--contact-textarea);
   margin: 0 0 5px;
   padding: 10px;
 }

@@ -5,4 +5,30 @@
     --h1-bottom: black;
     --text-color: white;
     --top-bar: #333;
+    --table-border: #333333;
+    --overlay-color: rgba(0, 0, 0, 0.5);
+    --menu-active-color: white;
+    --code-highlight-background: #353535;
+    --box-shadow1: rgba(0, 0, 0, 0.1);
+    --box-shadow2: rgba(0, 0, 0, 1);
+    --contact-textarea: rgba(255, 255, 255, .1);
+    --contact-background: rgb(33 33 33 / 95%);
+    --contact-btn: #c0c0c0;
+}
+
+.light-mode {
+    --background: #f7f7f7;
+    --color-heading: #5e5e5e;
+    --color-h1: #222;
+    --h1-bottom: #F0F2F4;
+    --text-color: #323232;
+    --top-bar: #F6F6F6;
+    --table-border: #eaeaea;
+    --overlay-color: rgba(255, 255, 255, 0.5);
+    --menu-active-color: #777;
+    --code-highlight-background: #272822;
+    --box-shadow1: rgba(0, 0, 0, 0.5);
+    --box-shadow2: rgba(230, 230, 230, 0.8);
+    --contact-textarea: #FFF;
+    --contact-background: #F9F9F9;
 }

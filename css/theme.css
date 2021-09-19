@@ -272,8 +272,8 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     padding-right: 1rem;
 }
 #sidebar ul li.active > a {
-    background: #fff;
-    color: #777 !important;
+    background: var(--background);
+    color: var(--menu-active-color) !important;
     margin-left: -1rem;
     margin-right: -1rem;
     padding-left: 1rem;
@@ -689,16 +689,16 @@ hr {
     background: inherit;
 }
 table {
-    border: 1px solid #eaeaea;
+    border: 1px solid var(--table-border);
     table-layout: auto;
 }
 th {
-    background: #f7f7f7;
+    background: var(--background);
     padding: 0.5rem;
 }
 td {
     padding: 0.5rem;
-    border: 1px solid #eaeaea;
+    border: 1px solid var(--table-border);
 }
 .button {
     background: #9c6fb6;
@@ -1038,7 +1038,7 @@ td {
         top: 0;
         bottom: 0;
         z-index: 10;
-        background: rgba(255, 255, 255, 0.5);
+        background: var(--overlay-color);
         cursor: pointer;
     }
 }
@@ -1130,4 +1130,8 @@ pre .copy-to-clipboard:hover {
 
 option {
     color: initial;
+}
+
+.highlight > pre {
+    background: var(--code-highlight-background) !important;
 }

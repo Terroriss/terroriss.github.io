@@ -21,12 +21,14 @@
 
     <title>  |  Minh Long</title>
     
-    <link href="/css/nucleus.css?1632057034" rel="stylesheet">
-    <link href="/css/main-style.css?1632057034" rel="stylesheet">
-    <link href="/css/main-nav-bar.css?1632057034" rel="stylesheet">
-    <link href="/css/main-search.css?1632057034" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1632057034" rel="stylesheet">
-    <script src="/js/jquery-3.3.1.min.js?1632057034"></script>
+    <link href="/css/nucleus.css?1632066818" rel="stylesheet">
+    <link href="/css/main-style.css?1632066818" rel="stylesheet">
+    <link href="/css/main-nav-bar.css?1632066818" rel="stylesheet">
+    <link href="/css/main-search.css?1632066818" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1632066818" rel="stylesheet">
+    <script src="/js/jquery-3.3.1.min.js?1632066818"></script>
+    <link href="/css/dark-mode-btn.css?1632066818" rel="stylesheet">
+    <link href="/css/dark-mode.css?1632066818" rel="stylesheet">
     <style>
         
         .child {
@@ -65,7 +67,7 @@
         }
         
         .child > h2 {
-            color: white;
+            color: var(--background);
         }
     
         .black-series > .child {
@@ -86,7 +88,7 @@
     </style>
   </head>
 
-<boby style="overflow-x: hidden;">
+<boby class="background" style="overflow-x: hidden;">
     <div class="topnav" style="position: absolute; width: 100%; top: 0; left: 0;">
       <a class="active" href="/">Trang chủ</a>
       <a href="/contact/">Liên hệ</a>
@@ -125,10 +127,52 @@
         </div>
     
     </div>
+    <div style="position: fixed; right: 20px; bottom: 30px;">
+        <input id="dark-toggle" class="dark-toggle" type="checkbox">
+<script>
+    const mode = localStorage.getItem("dark_mode");
+    const dark_btn = document.querySelector("#dark-toggle");
+    const bg = document.querySelector("body").classList
+    if (!bg.contains("background")) bg.add("background")
+    if (mode) {
+        if (mode == "true") {
+            bg.remove("light-mode")
+            dark_btn.checked = true;
+        } else {
+            bg.add("light-mode")
+            dark_btn.checked = false;
+        }
+    } else {
+        const device_color = window.matchMedia("(prefers-color-scheme: dark)");
+        if (device_color.matches) dark_mode(true);
+        else dark_mode(false);
+    }
     
+    function dark_mode(bool) {
+        if (bool) {
+            bg.remove("light-mode")
+            localStorage.setItem("dark_mode", true);
+            dark_btn.checked = true;
+        } else {
+            bg.add("light-mode")
+            localStorage.setItem("dark_mode", false);
+            dark_btn.checked = false;
+        }
+    }
+       
+    dark_btn.addEventListener("click", function() {
+        const _bg = document.querySelector(".background").classList
+        if (!_bg.contains("background-transition"))
+            _bg.add("background-transition"); 
+        if (this.checked) dark_mode(true);
+        else dark_mode(false);
+    });
+</script>
+
+    </div>
     
-    <script type="text/javascript" src="/js/lunr.min.js?1632057034"></script>
-    <script type="text/javascript" src="/js/auto-complete.js?1632057034"></script>
-    <script type="text/javascript" src="/js/main-page-search.js?1632057034"></script>
+    <script type="text/javascript" src="/js/lunr.min.js?1632066818"></script>
+    <script type="text/javascript" src="/js/auto-complete.js?1632066818"></script>
+    <script type="text/javascript" src="/js/main-page-search.js?1632066818"></script>
 </body>
 </html>
