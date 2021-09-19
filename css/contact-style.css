@@ -58,6 +58,10 @@
   margin-bottom: 10px;
 }
 
+h3, p {
+    color: var(--text-color);
+}
+
 .follow-me {
     font-size: 25px;
 }
@@ -88,7 +92,7 @@ fieldset {
 #contact textarea {
   box-sizing: border-box;
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid var(--contact-border);
   background: var(--contact-textarea);
   margin: 0 0 5px;
   padding: 10px;
@@ -136,23 +140,23 @@ fieldset {
 #contact input:focus,
 #contact textarea:focus {
   outline: 0;
-  border: 1px solid #aaa;
+  border: 1px solid var(--contact-text-holder);
 }
 
 ::-webkit-input-placeholder {
-  color: #888;
+  color: var(--contact-text-holder);
 }
 
 :-moz-placeholder {
-  color: #888;
+  color: var(--contact-text-holder);
 }
 
 ::-moz-placeholder {
-  color: #888;
+  color: var(--contact-text-holder);
 }
 
 :-ms-input-placeholder {
-  color: #888;
+  color: var(--contact-text-holder);
 }
 
 ul {

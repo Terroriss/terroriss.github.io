@@ -14,6 +14,8 @@
     --contact-textarea: rgba(255, 255, 255, .1);
     --contact-background: rgb(33 33 33 / 95%);
     --contact-btn: #c0c0c0;
+    --contact-text-holder: white;
+    --contact-border: #353535;
 }
 
 .light-mode {
@@ -31,4 +33,6 @@
     --box-shadow2: rgba(230, 230, 230, 0.8);
     --contact-textarea: #FFF;
     --contact-background: #F9F9F9;
+    --contact-text-holder: #888;
+    --contact-border: #ccc;
 }
