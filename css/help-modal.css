@@ -106,6 +106,10 @@
     cursor: pointer;
 }
 
+.info-txt > strong {
+    font-size: 1.045rem;
+}
+
 @media screen and (max-width: 768px) {
     .help-panel {
         width: 100%;
