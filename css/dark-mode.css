@@ -24,6 +24,7 @@
     --code-hover-bg: #E3CC79; 
     --progress-bg: rgba(62, 62, 62, 0.97);
     --progress-border: #3E3E3E;
+    --deck-label: #222;
 }
 
 .light-mode {
@@ -51,4 +52,5 @@
     --code-hover-bg: #E8E2CD; 
     --progress-bg: rgba(246, 246, 246, 0.97);
     --progress-border: #ECECEC;
+    --deck-label: #f7f7f7;
 }

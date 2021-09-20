@@ -177,6 +177,11 @@ ul {
 	 text-align: center;
 	 transform: translateY(-40px);
 }
+
+.deck__label {
+    color: var(--deck-label);
+}
+
  .deck__item {
 	 width: 100%;
 	 height: 100%;
