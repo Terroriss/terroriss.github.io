@@ -50,9 +50,9 @@ body {
 }
 .progress {
     position:absolute;
-    background-color: rgba(246, 246, 246, 0.97);
+    background-color: var(--progress-bg);
     width: auto;
-    border: thin solid #ECECEC;
+    border: thin solid var(--progress-border);
     display:none;
     z-index:200;
 }

@@ -18,6 +18,12 @@
     --contact-border: #353535;
     --main-active: #f2f2f2;
     --main-nav: #bfbfbf;
+    --code-text: #000;
+    --code-bg: #EAD697;
+    --code-border: #846503;
+    --code-hover-bg: #E3CC79; 
+    --progress-bg: rgba(62, 62, 62, 0.97);
+    --progress-border: #3E3E3E;
 }
 
 .light-mode {
@@ -39,4 +45,10 @@
     --contact-border: #ccc;
     --main-active: #323232;
     --main-nav: #f7f7f7;
+    --code-text: #5e5e5e;
+    --code-bg: #FFF7DD;
+    --code-border: #fbf0cb;
+    --code-hover-bg: #E8E2CD; 
+    --progress-bg: rgba(246, 246, 246, 0.97);
+    --progress-border: #ECECEC;
 }

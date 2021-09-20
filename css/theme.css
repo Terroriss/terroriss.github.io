@@ -619,9 +619,9 @@ code, kbd, pre, samp {
 code {
     border-radius: 2px;
     white-space: nowrap;
-    color: #5e5e5e;
-    background: #FFF7DD;
-    border: 1px solid #fbf0cb;
+    color: var(--code-text);
+    background: var(--code-bg);
+    border: 1px solid var(--code-border);
     padding: 0px 2px;
 }
 code + .copy-to-clipboard {
@@ -1053,15 +1053,15 @@ td {
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    color: #5e5e5e;
-    background-color: #FFF7DD;
+    color: var(--code-text);
+    background-color: var(--code-bg);
     margin-left: -.2rem;
     cursor: pointer;
     border-radius: 0 2px 2px 0;
     margin-bottom: 1px;
 }
 .copy-to-clipboard:hover {
-    background-color: #E8E2CD;
+    background-color: var(--code-hover-bg);
 }
 pre .copy-to-clipboard {
     position: absolute;

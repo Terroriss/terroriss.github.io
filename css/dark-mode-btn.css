@@ -45,3 +45,17 @@
 .tab-conversation.active > a {
     color: var(--color-h1) !important;
 }
+
+.dark-container {
+    position: relative; 
+    height: 100%; 
+    display: inline-block; 
+    float: right;
+}
+
+.dark-container > div {
+    position: absolute;
+    right: -11px;
+    top: 50%;
+    transform: translateY(-50%);
+}
