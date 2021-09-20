@@ -6,8 +6,8 @@
 	 cursor: pointer;
 	 width: var(--size);
 	 height: var(--size);
-	 box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0 !important;
-	 border-radius: 999px !important;
+	 box-shadow: inset .66rem -.5rem 0;
+	 border-radius: 999px;
 	 color: #717175;
 	 transition: all 500ms;
 }
