@@ -21,12 +21,12 @@
 
     <title>Liên hệ - Minh Long</title>
     
-    <link href="/css/main-style.css?1632137924" rel="stylesheet">
-    <link href="/css/main-nav-bar.css?1632137924" rel="stylesheet">
-    <link href="/css/contact-style.css?1632137924" rel="stylesheet">
-    <link href="/css/fontawesome.min.css?1632137924" rel="stylesheet">
-    <link href="/css/dark-mode-btn.css?1632137924" rel="stylesheet">
-    <link href="/css/dark-mode.css?1632137924" rel="stylesheet">
+    <link href="/css/main-style.css?1632138435" rel="stylesheet">
+    <link href="/css/main-nav-bar.css?1632138435" rel="stylesheet">
+    <link href="/css/contact-style.css?1632138435" rel="stylesheet">
+    <link href="/css/fontawesome.min.css?1632138435" rel="stylesheet">
+    <link href="/css/dark-mode-btn.css?1632138435" rel="stylesheet">
+    <link href="/css/dark-mode.css?1632138435" rel="stylesheet">
     
   </head>
 
@@ -35,7 +35,7 @@
         <input id="dark-toggle" class="dark-toggle" type="checkbox">
 <script>
     $(function() {      
-        let isBB = navigator.userAgent.match(/BlackBerry/i);
+        let isBB = navigator.userAgent.match(/BlackBerry/i) || /BlackBerry/i.test(navigator.userAgent);
 
         if (isBB) {
             var link = $("<link />",{
