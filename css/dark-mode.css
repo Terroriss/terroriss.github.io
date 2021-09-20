@@ -1,9 +1,9 @@
 :root {
     --background: #181818;
-    --color-heading: white;
-    --color-h1: white;
-    --h1-bottom: black;
-    --text-color: white;
+    --color-heading: #d0cccc;
+    --color-h1: #f7f7f7;
+    --h1-bottom: #353434;
+    --text-color: #bfbfbf;
     --top-bar: #333;
     --table-border: #333333;
     --overlay-color: rgba(0, 0, 0, 0.5);
@@ -14,7 +14,7 @@
     --contact-textarea: rgba(255, 255, 255, .1);
     --contact-background: rgb(33 33 33 / 95%);
     --contact-btn: #c0c0c0;
-    --contact-text-holder: white;
+    --contact-text-holder: #f7f7f7;
     --contact-border: #353535;
 }
 
