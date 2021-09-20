@@ -21,13 +21,13 @@
 
     <title>Liên hệ  |  Minh Long</title>
     
-    <link href="/css/main-style.css?1632138631" rel="stylesheet">
-    <link href="/css/main-nav-bar.css?1632138631" rel="stylesheet">
-    <link href="/css/contact-style.css?1632138631" rel="stylesheet">
-    <link href="/css/fontawesome.min.css?1632138631" rel="stylesheet">
-    <link href="/css/dark-mode-btn.css?1632138631" rel="stylesheet">
-    <link href="/css/dark-mode.css?1632138631" rel="stylesheet">
-    
+    <link href="/css/main-style.css?1632140157" rel="stylesheet">
+    <link href="/css/main-nav-bar.css?1632140157" rel="stylesheet">
+    <link href="/css/contact-style.css?1632140157" rel="stylesheet">
+    <link href="/css/fontawesome.min.css?1632140157" rel="stylesheet">
+    <link href="/css/dark-mode-btn.css?1632140157" rel="stylesheet">
+    <link href="/css/dark-mode.css?1632140157" rel="stylesheet">
+    <script src="/js/jquery-3.3.1.min.js?1632140157"></script>
   </head>
 
 <boby>
@@ -35,9 +35,9 @@
         <input id="dark-toggle" class="dark-toggle" type="checkbox">
 <script>
     $(function() {      
-        let isBB = navigator.userAgent.match(/BlackBerry|BB/i) || /BlackBerry|BB/i.test(navigator.userAgent);
+        let notSupport = localStorage.getItem("not_sp");
 
-        if (isBB) {
+        if (notSupport == "true") {
             var link = $("<link />",{
              rel: "stylesheet",
              type: "text/css",
