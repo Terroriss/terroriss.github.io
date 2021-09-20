@@ -1,6 +1,6 @@
 :root {
     --background: #181818;
-    --color-heading: #f7f7f7;
+    --color-heading: #ececec;
     --color-h1: white;
     --h1-bottom: #353434;
     --text-color: #bfbfbf;
@@ -17,7 +17,7 @@
     --contact-text-holder: #f7f7f7;
     --contact-border: #353535;
     --main-active: #f2f2f2;
-    --main-nav: #595959;
+    --main-nav: #bfbfbf;
 }
 
 .light-mode {
@@ -38,5 +38,5 @@
     --contact-text-holder: #888;
     --contact-border: #ccc;
     --main-active: #323232;
-    --main-nav: #333;
+    --main-nav: #f7f7f7;
 }
