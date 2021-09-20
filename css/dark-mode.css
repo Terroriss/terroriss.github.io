@@ -17,6 +17,7 @@
     --contact-text-holder: #f7f7f7;
     --contact-border: #353535;
     --main-active: #f2f2f2;
+    --main-nav: #595959;
 }
 
 .light-mode {
@@ -37,4 +38,5 @@
     --contact-text-holder: #888;
     --contact-border: #ccc;
     --main-active: #323232;
+    --main-nav: #333;
 }
