@@ -13,6 +13,7 @@
 	 color: #717175;
 	 transition: all 500ms;
 }
+
  .dark-toggle:checked {
 	 --ray-size: calc(var(--size) * -0.4);
 	 --offset-orthogonal: calc(var(--size) * 0.65);

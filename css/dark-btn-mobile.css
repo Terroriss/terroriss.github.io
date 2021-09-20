@@ -1,0 +1,27 @@
+.dark-toggle::before {
+    content: "";
+    display: block;
+    width: var(--size);
+	height: var(--size);
+	outline: none;
+	background: var(--background);
+	border-radius: 999px;
+	margin-left: 10px;
+	position: absolute;
+	border-color: transparent;
+	bottom: 9px;
+	transition: background 750ms !important;
+}
+
+.dark-toggle:checked::before {
+    height: 1rem;
+    width: 1rem;
+    margin-left: 30px;
+    bottom: 30px;
+    transition: none !important;
+    background: transparent;
+}
+
+.dark-toggle {
+    background: #717175;
+}

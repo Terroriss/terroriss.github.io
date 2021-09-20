@@ -21,12 +21,12 @@
 
     <title>Liên hệ - Minh Long</title>
     
-    <link href="/css/main-style.css?1632134657" rel="stylesheet">
-    <link href="/css/main-nav-bar.css?1632134657" rel="stylesheet">
-    <link href="/css/contact-style.css?1632134657" rel="stylesheet">
-    <link href="/css/fontawesome.min.css?1632134657" rel="stylesheet">
-    <link href="/css/dark-mode-btn.css?1632134657" rel="stylesheet">
-    <link href="/css/dark-mode.css?1632134657" rel="stylesheet">
+    <link href="/css/main-style.css?1632137924" rel="stylesheet">
+    <link href="/css/main-nav-bar.css?1632137924" rel="stylesheet">
+    <link href="/css/contact-style.css?1632137924" rel="stylesheet">
+    <link href="/css/fontawesome.min.css?1632137924" rel="stylesheet">
+    <link href="/css/dark-mode-btn.css?1632137924" rel="stylesheet">
+    <link href="/css/dark-mode.css?1632137924" rel="stylesheet">
     
   </head>
 
@@ -34,6 +34,19 @@
     <div style="position: fixed; left: 20px; bottom: 20px; z-index: 2;">
         <input id="dark-toggle" class="dark-toggle" type="checkbox">
 <script>
+    $(function() {      
+        let isBB = navigator.userAgent.match(/BlackBerry/i);
+
+        if (isBB) {
+            var link = $("<link />",{
+             rel: "stylesheet",
+             type: "text/css",
+             href: "/css/dark-btn-mobile.css"
+           })
+           $('head').append(link);
+        }
+     });
+
     const mode = localStorage.getItem("dark_mode");
     const dark_btn = document.querySelector("#dark-toggle");
     const bg = document.querySelector("body").classList
