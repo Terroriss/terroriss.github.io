@@ -295,6 +295,7 @@ ul {
         position: absolute; 
         left: 0; 
         bottom: -350px;
+        z-index: -2;
     }
     
     .contact-container > .right {
