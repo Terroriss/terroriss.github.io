@@ -145,7 +145,7 @@
     }
 }
 
-@media screen and (max-height: 289px) {
+@media screen and (max-height: 289px), screen and (max-width: 276px) { 
     .help-modal {
         display: none;
     }
