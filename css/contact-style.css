@@ -13,8 +13,7 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);   
-    overflow: overlay;
-    overflow-y: visible;
+    
     height: 70%;
     margin-top: 100px;
 }
@@ -47,6 +46,7 @@
   background: var(--contact-background);
   padding: 25px;
   margin: 0;
+  max-width: 100%;
   padding-bottom: 35px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -296,3 +296,12 @@ ul {
     }
 }
 
+@media screen and (max-height: 646px) {
+    .contact-container {
+        margin-top: 65px;
+    }
+    
+    .contact-container > .left {
+        margin-bottom: 35px;
+    }
+}
