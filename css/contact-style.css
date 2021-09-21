@@ -285,6 +285,10 @@ ul {
         margin-bottom: 500px;
     }
     
+    #contact h3 {
+        margin-top: 15px;
+    }
+    
     .padding-div {
         height: 50px; 
         width: 100%; 
