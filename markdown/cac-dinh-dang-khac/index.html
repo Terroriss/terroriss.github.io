@@ -23,23 +23,23 @@
 
     <title>Các định dạng khác  |  Minh Long</title>
     
-    <link href="/css/nucleus.css?1632363464" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1632363464" rel="stylesheet">
-    <link href="/css/hybrid.css?1632363464" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1632363464" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1632363464" rel="stylesheet">
-    <link href="/css/auto-complete.css?1632363464" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1632363464" rel="stylesheet">
-    <link href="/css/theme.css?1632363464" rel="stylesheet">
-    <link href="/css/tabs.css?1632363464" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1632363464" rel="stylesheet">
-    <link href="/css/dark-mode-btn.css?1632363464" rel="stylesheet">
-    <link href="/css/dark-mode.css?1632363464" rel="stylesheet">
+    <link href="/css/nucleus.css?1632412425" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1632412425" rel="stylesheet">
+    <link href="/css/hybrid.css?1632412425" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1632412425" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1632412425" rel="stylesheet">
+    <link href="/css/auto-complete.css?1632412425" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1632412425" rel="stylesheet">
+    <link href="/css/theme.css?1632412425" rel="stylesheet">
+    <link href="/css/tabs.css?1632412425" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1632412425" rel="stylesheet">
+    <link href="/css/dark-mode-btn.css?1632412425" rel="stylesheet">
+    <link href="/css/dark-mode.css?1632412425" rel="stylesheet">
     
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1632363464"></script>
+    <script src="/js/jquery-3.3.1.min.js?1632412425"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -173,14 +173,14 @@ c26 -27 34 -85 22 -143 -36 -167 -55 -236 -91 -331 -17 -44 -35 -82 -39 -85
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1632363464"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1632363464"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1632412425"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1632412425"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/minhlong.site\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1632363464"></script>
+<script type="text/javascript" src="/js/search.js?1632412425"></script>
 
     
   </div>
@@ -446,10 +446,11 @@ c26 -27 34 -85 22 -143 -36 -167 -55 -236 -91 -331 -17 -44 -35 -82 -39 -85
   <ul>
     <li>
       <ul>
-        <li><a href="#1-bảng-tables">1) Bảng (Tables):</a></li>
-        <li><a href="#2-liên-kết-links">2) Liên kết (Links):</a></li>
-        <li><a href="#3">3):</a></li>
-        <li><a href="#4">4):</a></li>
+        <li><a href="#heading-ids">1) ID cho Tiêu Đề (Heading IDs):  </a></li>
+        <li><a href="#2-bảng-tables">2) Bảng (Tables):</a></li>
+        <li><a href="#3-liên-kết-links">3) Liên kết (Links):</a></li>
+        <li><a href="#4-đoạn-mã-lập-trình-code">4) Đoạn mã lập trình (Code):</a></li>
+        <li><a href="#5">5):</a></li>
       </ul>
     </li>
   </ul>
@@ -477,8 +478,13 @@ c26 -27 34 -85 22 -143 -36 -167 -55 -236 -91 -331 -17 -44 -35 -82 -39 -85
 
 
 
-	<h3 id="1-bảng-tables">1) Bảng (Tables):</h3>
-<p>Để tạo bảng, dùng ít nhất 3 dấu gạch (&mdash;) để tạo phần tiêu đề cho mỗi cột, và dấu gạch đứng (|) để tạo chia cột:</p>
+	<h3 id="heading-ids">1) ID cho Tiêu Đề (Heading IDs):  </h3>
+<p>Rất nhiều bộ xử lý Markdown hỗ trợ việc thêm id cho <a href="/markdown/dinh-dang-van-ban/#1-ti%C3%AAu-%C4%91%E1%BB%81-headings">tiêu đề</a>, việc này sẽ giúp bạn dễ dàng sử dụng CSS để định dạng cách hiển thị cho trang web. Để thêm id, ta đặt đoạn id đó vào cặp dấu ngoặc nhọn ({}) ngay cùng dòng với tiêu đề:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#75715e">### Tiêu đề {#id-tuy-chinh}
+</span></code></pre></div><p>Tương đương với đoạn HTML sau:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h3</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;id-tuy-chinh&#34;</span>&gt;Tiêu đề&lt;/<span style="color:#f92672">h3</span>&gt;
+</code></pre></div><h3 id="2-bảng-tables">2) Bảng (Tables):</h3>
+<p>Để tạo bảng, dùng ít nhất 3 dấu gạch (-) để tạo phần tiêu đề cho mỗi cột, và dấu gạch đứng (|) để tạo chia cột:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">| Tiêu đề 1 | Tiêu đề 2 |
 |-----------|-----------|
 | Nội dung  | Nội dung  |
@@ -535,13 +541,67 @@ c26 -27 34 -85 22 -143 -36 -167 -55 -236 -91 -331 -17 -44 -35 -82 -39 -85
 </tr>
 </tbody>
 </table>
-<h3 id="2-liên-kết-links">2) Liên kết (Links):</h3>
+<p><strong>Lưu ý</strong>, để hiển thị dấu gạch đứng (|) trong bảng, bạn có thể dùng mã HTML (|).</p>
+<h3 id="3-liên-kết-links">3) Liên kết (Links):</h3>
 <p>Để tạo một liên kết, đặt văn bản hiển thị trong cặp ngoặc vuông và ngay sau đó là địa chỉ liên kết trong cặp ngoặc tròn:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">Đây là [<span style="color:#f92672">trang web của mình</span>](<span style="color:#a6e22e">https://minhlong.site</span>).
 </code></pre></div><p><strong>Kết quả hiển thị</strong></p>
 <p>Đây là <a href="https://minhlong.site">trang web của mình</a>.</p>
-<h3 id="3">3):</h3>
-<h3 id="4">4):</h3>
+<h4 id="thêm-chú-giải-cho-liên-kết-tooltips">Thêm chú giải cho liên kết (Tooltips)</h4>
+<p>Để thêm chú giải (đoạn văn bản xuất hiện khi ta di chuột vào liên kết), cho đoạn văn bản chú giải vào sau địa chỉ liên kết:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">Đây là [<span style="color:#f92672">trang web của mình</span>](<span style="color:#a6e22e">https://minhlong.site &#34;Minh Long&#34;</span>).
+</code></pre></div><p><strong>Kết quả hiển thị</strong>
+Đây là <a href="https://minhlong.site" title="Minh Long">trang web của mình</a>.</p>
+<h4 id="liên-kết-trong-cùng-một-trang">Liên kết trong cùng một trang</h4>
+<p>Bạn có thể dùng dấu thăng (#) để liên kết đến <a href="#heading-ids">ID của tiêu đề</a> trong cùng một trang:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">Liên kết đến [<span style="color:#f92672">id tiêu đề</span>](<span style="color:#a6e22e">#heading-ids</span>)
+</code></pre></div><p><strong>Kết quả hiển thị</strong></p>
+<p>Liên kết đến <a href="#heading-ids">id tiêu đề</a></p>
+<p>Và để liên kết đến trang khác, bạn chỉ cần thêm địa chỉ url của trang chứa tiêu đề đó và id tiêu đề. Ví dụ</p>
+<pre tabindex="0"><code>[Giới thiệu Markdown](/markdown/gioi-thieu#markdown-là-gì)
+</code></pre><p><a href="/markdown/gioi-thieu#markdown-l%C3%A0-g%C3%AC">Giới thiệu Markdown</a></p>
+<p><strong>Lưu ý</strong>, bạn cũng có thể sử dụng cú pháp sau để hiển thị nhanh địa chỉ url hoặc địa chỉ e-mail:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">&lt;<span style="color:#f92672">https:</span><span style="color:#960050;background-color:#1e0010">//</span><span style="color:#a6e22e">minhlong</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">site</span>&gt;
+
+&lt;<span style="color:#f92672">contact</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">minhlong</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">site</span>&gt;
+</code></pre></div><p><strong>Kết quả hiển thị</strong></p>
+<p><a href="https://minhlong.site">https://minhlong.site</a></p>
+<p><a href="mailto:contact@minhlong.site">contact@minhlong.site</a></p>
+<p><strong>Lưu ý</strong>, để nhấn mạnh liên kết, ta có thể đặt đoạn liên kết vào cặp dấu sao (*) như phần <a href="/markdown/dinh-dang-van-ban/#4-nh%E1%BA%A5n-m%E1%BA%A1nh-v%C4%83n-b%E1%BA%A3n-emphasis">nhấn mạnh văn bản</a> ở phần trước. Bạn cũng có thể biểu diễn văn bản liên kết dưới dạng <a href="#3-%C4%91o%E1%BA%A1n-m%C3%A3-l%E1%BA%ADp-tr%C3%ACnh-code">code</a>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">Đây là đoạn <span style="font-style:italic">**</span>[<span style="color:#f92672">liên kết in đậm</span>](<span style="color:#a6e22e">https://minhlong.site &#34;Minh Long&#34;</span>).**
+
+Đây là đoạn <span style="font-style:italic">*[liên kết in nghiêng](https://minhlong.site &#34;Minh Long&#34;).*</span>
+
+Bạn cũng có thể dùng định dạng [<span style="color:#f92672">`code`</span>](<span style="color:#a6e22e">#3-đoạn-mã-lập-trình-code</span>) để biểu diễn văn bản liên kết.
+</code></pre></div><p><strong>Kết quả hiển thị</strong></p>
+<p>Đây là đoạn <strong><a href="https://minhlong.site" title="Minh Long">liên kết in đậm</a>.</strong></p>
+<p>Đây là đoạn <em><a href="https://minhlong.site" title="Minh Long">liên kết in nghiêng</a>.</em></p>
+<p>Bạn cũng có thể dùng định dạng <a href="#3-%C4%91o%E1%BA%A1n-m%C3%A3-l%E1%BA%ADp-tr%C3%ACnh-code"><code>code</code></a> để biểu diễn văn bản liên kết.</p>
+<p><strong>Lưu ý</strong>, Mardown không cho phép có dấu cách trong liên kết, thay mọi dấu cách trong liên kết bằng %20.</p>
+<table>
+<thead>
+<tr>
+<th>✓ Nên</th>
+<th>✗ Không nên</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+[link](https://www.example.com/co%20dau%20cach)
+</td>
+<td>
+ [link](https://www.example.com/co dau cach) 
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-đoạn-mã-lập-trình-code">4) Đoạn mã lập trình (Code):</h3>
+<p>Để thêm đoạn mã lập trình, ta dùng dấu backtick (`):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#e6db74">`div`</span> là một thẻ trong HTML.
+</code></pre></div><p><strong>Kết quả hiển thị</strong></p>
+<p><code>div</code> là một thẻ trong HTML.</p>
+<h3 id="5">5):</h3>
 
 
 
@@ -744,19 +804,19 @@ text-align: center;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1632363464"></script>
-    <script src="/js/perfect-scrollbar.min.js?1632363464"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1632363464"></script>
-    <script src="/js/jquery.sticky.js?1632363464"></script>
-    <script src="/js/featherlight.min.js?1632363464"></script>
-    <script src="/js/highlight.pack.js?1632363464"></script>
+    <script src="/js/clipboard.min.js?1632412425"></script>
+    <script src="/js/perfect-scrollbar.min.js?1632412425"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1632412425"></script>
+    <script src="/js/jquery.sticky.js?1632412425"></script>
+    <script src="/js/featherlight.min.js?1632412425"></script>
+    <script src="/js/highlight.pack.js?1632412425"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1632363464"></script>
-    <script src="/js/learn.js?1632363464"></script>
-    <script src="/js/hugo-learn.js?1632363464"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1632412425"></script>
+    <script src="/js/learn.js?1632412425"></script>
+    <script src="/js/hugo-learn.js?1632412425"></script>
     
         
-            <script src="/mermaid/mermaid.js?1632363464"></script>
+            <script src="/mermaid/mermaid.js?1632412425"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
