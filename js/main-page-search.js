@@ -13,7 +13,7 @@ pagesIndex = [
     {
         "index": "3",
         "title": "Cheat Sheets",
-        "tags": ["markdown", "syntax", "blue-se"]
+        "tags": ["markdown", "html", "css", "markup language", "stylesheet", "language", "syntax", "blue-se"]
     }, 
 ]
 

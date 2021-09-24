@@ -8,6 +8,26 @@
     <language>vi</language>
     <lastBuildDate>Wed, 15 Sep 2021 20:28:41 +0700</lastBuildDate><atom:link href="https://minhlong.site/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>CSS</title>
+      <link>https://minhlong.site/cheatsheet/stylesheet-language/css/</link>
+      <pubDate>Fri, 24 Sep 2021 19:30:24 +0700</pubDate>
+      
+      <guid>https://minhlong.site/cheatsheet/stylesheet-language/css/</guid>
+      <description>Font Properties    Name Desciption Example     Font-Family  Changes the font family of certain words, sentences,
+paragraphs, etc.  P { font-family: &amp;ldquo;New Century Schoolbook&amp;rdquo;, Times, serif; }   Font-Style Changes text: normal, oblique, and italics.  H1 { font-style: oblique; } P { font-style: normal; }    Font-Variant Used to display font in normal or small-caps. SPAN { font-variant: small-caps; }   Font-Weight Used to specify the weight of the font.</description>
+    </item>
+    
+    <item>
+      <title>Giới thiệu</title>
+      <link>https://minhlong.site/markdown/gioi-thieu/</link>
+      <pubDate>Thu, 16 Sep 2021 21:27:20 +0700</pubDate>
+      
+      <guid>https://minhlong.site/markdown/gioi-thieu/</guid>
+      <description>Markdown là gì? Markdown là ngôn ngữ đánh dấu văn bản đơn giản, được sử dụng phổ biến như dùng để viết tập tin README, viết tin nhắn trên diễn đàn, viết bài trên blog (ví dụ như blog này).
+Tại sao lại sử dụng Mardown?  Markdown có cú pháp đơn giản dễ nhớ, dễ học. Khi sử dụng cần gõ ít ký tự, tăng tốc độ đánh máy. Có thể chuyển đầu ra dưới định dạng chuẩn XHTML.</description>
+    </item>
+    
+    <item>
       <title>HTML</title>
       <link>https://minhlong.site/cheatsheet/markup-language/html/</link>
       <pubDate>Fri, 24 Sep 2021 17:48:57 +0700</pubDate>
@@ -25,16 +45,6 @@
       <description>Basic Syntax These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
    Element Markdown Syntax     Heading  # H1 ## H2 ### H3    Bold  **bold text**    Italic  *italicized text*    Blockquote   blockquote    Ordered List  1. First item
 2. Second item</description>
-    </item>
-    
-    <item>
-      <title>Giới thiệu</title>
-      <link>https://minhlong.site/markdown/gioi-thieu/</link>
-      <pubDate>Thu, 16 Sep 2021 21:27:20 +0700</pubDate>
-      
-      <guid>https://minhlong.site/markdown/gioi-thieu/</guid>
-      <description>Markdown là gì? Markdown là ngôn ngữ đánh dấu văn bản đơn giản, được sử dụng phổ biến như dùng để viết tập tin README, viết tin nhắn trên diễn đàn, viết bài trên blog (ví dụ như blog này).
-Tại sao lại sử dụng Mardown?  Markdown có cú pháp đơn giản dễ nhớ, dễ học. Khi sử dụng cần gõ ít ký tự, tăng tốc độ đánh máy. Có thể chuyển đầu ra dưới định dạng chuẩn XHTML.</description>
     </item>
     
     <item>
