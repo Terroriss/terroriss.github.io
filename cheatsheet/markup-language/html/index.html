@@ -21,7 +21,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Sử dụng Markdown cơ bản  |  Minh Long</title>
+    <title>HTML  |  Minh Long</title>
     
     <link href="/css/nucleus.css?1632486567" rel="stylesheet">
     <link href="/css/fontawesome-all.min.css?1632486567" rel="stylesheet">
@@ -36,6 +36,8 @@
     <link href="/css/dark-mode-btn.css?1632486567" rel="stylesheet">
     <link href="/css/dark-mode.css?1632486567" rel="stylesheet">
     
+    
+    <link href="/css/theme-blue.css?1632486567" rel="stylesheet">
     
     
 
@@ -61,7 +63,7 @@
     
     
   </head>
-  <body class="" data-url="/markdown/" style="background-color: var(--background);">
+  <body class="" data-url="/cheatsheet/markup-language/html/" style="background-color: var(--background);">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -199,13 +201,13 @@ c26 -27 34 -85 22 -143 -36 -167 -55 -236 -91 -331 -17 -44 -35 -82 -39 -85
  
   
     
-    <li data-nav-id="/markdown/" title="Sử dụng Markdown cơ bản" class="dd-item
+    <li data-nav-id="/cheatsheet/" title="Cheat sheets" class="dd-item
         parent
-        active
+        
         
         ">
-      <a href="/markdown/">
-          Sử dụng Markdown cơ bản
+      <a href="/cheatsheet/">
+          Cheat sheets
           
             <i class="fas fa-check read-icon"></i>
           
@@ -230,9 +232,38 @@ c26 -27 34 -85 22 -143 -36 -167 -55 -236 -91 -331 -17 -44 -35 -82 -39 -85
  
   
     
-      <li data-nav-id="/markdown/gioi-thieu/" title="Giới thiệu" class="dd-item ">
-        <a href="/markdown/gioi-thieu/">
-        <b>Phần 1. </b>Giới thiệu
+    <li data-nav-id="/cheatsheet/markup-language/" title="Markup Language" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/cheatsheet/markup-language/">
+          Markup Language
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/cheatsheet/markup-language/html/" title="HTML" class="dd-item active">
+        <a href="/cheatsheet/markup-language/html/">
+        HTML
         <i class="fas fa-check read-icon"></i>
         </a>
     </li>
@@ -251,74 +282,20 @@ c26 -27 34 -85 22 -143 -36 -167 -55 -236 -91 -331 -17 -44 -35 -82 -39 -85
  
   
     
-    <li data-nav-id="/markdown/dinh-dang-van-ban/" title="Định dạng văn bản" class="dd-item
-        
-        
-        
-        ">
-      <a href="/markdown/dinh-dang-van-ban/">
-          <b>Phần 2. </b>Định dạng văn bản
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-      
+      <li data-nav-id="/cheatsheet/markup-language/markdown/" title="Markdown" class="dd-item ">
+        <a href="/cheatsheet/markup-language/markdown/">
+        Markdown
+        <i class="fas fa-check read-icon"></i>
+        </a>
     </li>
+     
   
  
 
             
           
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/markdown/cac-dinh-dang-khac/" title="Các định dạng khác" class="dd-item
         
-        
-        
-        ">
-      <a href="/markdown/cac-dinh-dang-khac/">
-          <b>Phần 3. </b>Các định dạng khác
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-      
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/markdown/tham-khao/" title="Tài liệu tham khảo" class="dd-item
-        
-        
-        
-        ">
-      <a href="/markdown/tham-khao/">
-          <b>Phần 4. </b>Tài liệu tham khảo
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
+        </ul>
       
     </li>
   
@@ -458,51 +435,532 @@ c26 -27 34 -85 22 -143 -36 -167 -55 -236 -91 -331 -17 -44 -35 -82 -39 -85
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
-                   Sử dụng Markdown cơ bản
+                   HTML
                  
                   </span>
                 </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#basic-tags">Basic Tags</a></li>
+        <li><a href="#body-attributes-only-used-in-email-newsletters">Body attributes (only used in email newsletters)</a></li>
+        <li><a href="#text-tags">Text Tags</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#formatting">Formatting</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#graphical-elements">Graphical elements</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#html5-input-tag-attributes-not-all-browsers-support">HTML5 input tag attributes (not all browsers support)</a></li>
+        <li><a href="#tables-use-only-for-data-layout---use-css-for-page-layout">Tables (use only for data layout - use CSS for page layout)</a></li>
+        <li><a href="#table-attributes-only-use-for-email-newsletters">Table attributes (only use for email newsletters)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
                 
               </div>
             </div>
             
         <div id="head-tags">
         
-<div class="tags">
-
-  <a class="tag-link" href="/tags/markdown">markdown</a>
-
-  <a class="tag-link" href="/tags/syntax">syntax</a>
-
-</div>
-
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              HTML
+            </h1>
           
 
         
 
 
+<h3 id="basic-tags">Basic Tags</h3>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;html&gt; &lt;/html&gt;</code></td>
+<td>Creates an HTML document</td>
+</tr>
+<tr>
+<td><code>&lt;head&gt; &lt;/head&gt;</code></td>
+<td>Sets off the title &amp; other info that isn&rsquo;t displayed</td>
+</tr>
+<tr>
+<td><code>&lt;body&gt; &lt;/body&gt;</code></td>
+<td>Sets off the visible portion of the document</td>
+</tr>
+<tr>
+<td><code>&lt;title&gt; &lt;/title&gt;</code></td>
+<td>Puts name of the document in the title bar; when bookmarking pages, this is what is bookmarked</td>
+</tr>
+</tbody>
+</table>
+<h3 id="body-attributes-only-used-in-email-newsletters">Body attributes (only used in email newsletters)</h3>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;body bgcolor=?&gt;</code></td>
+<td>Sets background color, using name or hex value</td>
+</tr>
+<tr>
+<td><code>&lt;body text=?&gt;</code></td>
+<td>Sets text color, using name or hex value</td>
+</tr>
+<tr>
+<td><code>&lt;body link=?&gt;</code></td>
+<td>Sets color of links, using name or hex value</td>
+</tr>
+<tr>
+<td><code>&lt;body vlink=?&gt;</code></td>
+<td>Sets color of visited links, using name or hex value</td>
+</tr>
+<tr>
+<td><code>&lt;body alink=?&gt;</code></td>
+<td>Sets color of active links (while mouse-clicking)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="text-tags">Text Tags</h3>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>`<!-- raw HTML omitted --> <!-- raw HTML omitted --></td>
+<td>Creates preformatted text</td>
+</tr>
+<tr>
+<td><code>&lt;h1&gt; &lt;/h1&gt; --&gt; &lt;h6&gt; &lt;/h6&gt;</code></td>
+<td>Creates headlines &ndash; H1=largest, H6=smallest</td>
+</tr>
+<tr>
+<td><code>&lt;b&gt; &lt;/b&gt;</code></td>
+<td>Creates bold text (should use <code>&lt;strong&gt;</code> instead)</td>
+</tr>
+<tr>
+<td><code>&lt;i&gt; &lt;/i&gt;</code></td>
+<td>Creates italicized text (should use <code>&lt;em&gt;</code> instead)</td>
+</tr>
+<tr>
+<td><code>&lt;tt&gt; &lt;/tt&gt;</code></td>
+<td>Creates typewriter-style text</td>
+</tr>
+<tr>
+<td><code>&lt;code&gt; &lt;/code&gt;</code></td>
+<td>Used to define source code, usually monospace</td>
+</tr>
+<tr>
+<td><code>&lt;cite&gt; &lt;/cite&gt;</code></td>
+<td>Creates a citation, usually processed in italics</td>
+</tr>
+<tr>
+<td><code>&lt;address&gt; &lt;/address&gt;</code></td>
+<td>Creates address section, usually processed in italics</td>
+</tr>
+<tr>
+<td><code>&lt;em&gt; &lt;/em&gt;</code></td>
+<td>Emphasizes a word (usually processed in italics)</td>
+</tr>
+<tr>
+<td><code>&lt;strong&gt; &lt;/strong&gt;</code></td>
+<td>Emphasizes a word (usually processed in bold)</td>
+</tr>
+<tr>
+<td><code>&lt;font size=?&gt; &lt;/font&gt;</code></td>
+<td>Sets size of font - 1 to 7 (should use CSS instead)</td>
+</tr>
+<tr>
+<td><code>&lt;font color=?&gt; &lt;/font&gt;</code></td>
+<td>Sets font color (should use CSS instead)</td>
+</tr>
+<tr>
+<td><code>&lt;font face=?&gt; &lt;/font&gt;</code></td>
+<td>Defines the font used (should use CSS instead)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="links">Links</h3>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;a href=&quot;URL&quot;&gt;clickable text&lt;/a&gt;</code></td>
+<td>Creates a hyperlink to a Uniform Resource Locator</td>
+</tr>
+<tr>
+<td><code>&lt;a href=&quot;mailto:EMAIL_ADDRESS&quot;&gt;clickable text&lt;/a&gt;</code></td>
+<td>Creates a hyperlink to an email address</td>
+</tr>
+<tr>
+<td><code>&lt;a name=&quot;NAME&quot;&gt;</code></td>
+<td>Creates a target location within a document</td>
+</tr>
+<tr>
+<td><code>&lt;a href=&quot;#NAME&quot;&gt;clickable text&lt;/a&gt;</code></td>
+<td>Creates a link to that target location</td>
+</tr>
+</tbody>
+</table>
+<h3 id="formatting">Formatting</h3>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;p&gt; &lt;/p&gt;</code></td>
+<td>Creates a new paragraph</td>
+</tr>
+<tr>
+<td><code>&lt;br&gt;</code></td>
+<td>Inserts a line break (carriage return)</td>
+</tr>
+<tr>
+<td><code>&lt;blockquote&gt; &lt;/blockquote&gt;</code></td>
+<td>Puts content in a quote - indents text from both sides</td>
+</tr>
+<tr>
+<td><code>&lt;div&gt; &lt;/div&gt;</code></td>
+<td>Used to format block content with CSS</td>
+</tr>
+<tr>
+<td><code>&lt;span&gt; &lt;/span&gt;</code></td>
+<td>Used to format inline content with CSS</td>
+</tr>
+</tbody>
+</table>
+<h3 id="lists">Lists</h3>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;ul&gt; &lt;/ul&gt;</code></td>
+<td>Creates an unordered list</td>
+</tr>
+<tr>
+<td><code>&lt;ol start=?&gt; &lt;/ol&gt;</code></td>
+<td>Creates an ordered list (start=xx, where xx is a counting number)</td>
+</tr>
+<tr>
+<td><code>&lt;li&gt; &lt;/li&gt;</code></td>
+<td>Encompasses each list item</td>
+</tr>
+<tr>
+<td><code>&lt;dl&gt; &lt;/dl&gt;</code></td>
+<td>Creates a definition list</td>
+</tr>
+<tr>
+<td><code>&lt;dt&gt;</code></td>
+<td>Precedes each defintion term</td>
+</tr>
+<tr>
+<td><code>&lt;dd&gt;</code></td>
+<td>Precedes each defintion</td>
+</tr>
+</tbody>
+</table>
+<h3 id="graphical-elements">Graphical elements</h3>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;hr&gt;</code></td>
+<td>Inserts a horizontal rule</td>
+</tr>
+<tr>
+<td><code>&lt;hr size=?&gt;</code></td>
+<td>Sets size (height) of horizontal rule</td>
+</tr>
+<tr>
+<td><code>&lt;hr width=?&gt;</code></td>
+<td>Sets width of rule (as a % or absolute pixel length)</td>
+</tr>
+<tr>
+<td><code>&lt;hr noshade&gt;</code></td>
+<td>Creates a horizontal rule without a shadow</td>
+</tr>
+<tr>
+<td><code>&lt;img src=&quot;URL&quot; /&gt;</code></td>
+<td>Adds image; it is a separate file located at the URL</td>
+</tr>
+<tr>
+<td><code>&lt;img src=&quot;URL&quot; align=?&gt;</code></td>
+<td>Aligns image left/right/center/bottom/top/middle (use CSS)</td>
+</tr>
+<tr>
+<td><code>&lt;img src=&quot;URL&quot; border=?&gt;</code></td>
+<td>Sets size of border surrounding image (use CSS)</td>
+</tr>
+<tr>
+<td><code>&lt;img src=&quot;URL&quot; height=?&gt;</code></td>
+<td>Sets height of image, in pixels</td>
+</tr>
+<tr>
+<td><code>&lt;img src=&quot;URL&quot; width=?&gt;</code></td>
+<td>Sets width of image, in pixels</td>
+</tr>
+<tr>
+<td><code>&lt;img src=&quot;URL&quot; alt=?&gt;</code></td>
+<td>Sets the alternate text for browsers that can&rsquo;t process images (required by the ADA)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="forms">Forms</h3>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;form&gt; &lt;/form&gt;</code></td>
+<td>Defines a form</td>
+</tr>
+<tr>
+<td><code>&lt;select multiple name=? size=?&gt; &lt;/select&gt;</code></td>
+<td>Creates a scrolling menu. Size sets the number of menu items visible before user needs to scroll.</td>
+</tr>
+<tr>
+<td><code>&lt;select name=?&gt; &lt;/select&gt;</code></td>
+<td>Creates a pulldown menu</td>
+</tr>
+<tr>
+<td><code>&lt;option&gt;</code></td>
+<td>Sets off each menu item</td>
+</tr>
+<tr>
+<td><code>&lt;textarea name=? cols=&quot;x&quot; rows=&quot;y&quot;&gt;&lt;/textarea&gt;</code></td>
+<td>Creates a text box area. Columns set the width; rows set the height.</td>
+</tr>
+<tr>
+<td><code>&lt;input type=&quot;checkbox&quot; name=? value=?&gt;</code></td>
+<td>Creates a checkbox.</td>
+</tr>
+<tr>
+<td><code>&lt;input type=&quot;checkbox&quot; name=? value=? checked&gt;</code></td>
+<td>Creates a checkbox which is pre-checked.</td>
+</tr>
+<tr>
+<td><code>&lt;input type=&quot;radio&quot; name=? value=?&gt;</code></td>
+<td>Creates a radio button.</td>
+</tr>
+<tr>
+<td><code>&lt;input type=&quot;radio&quot; name=? value=? checked&gt;</code></td>
+<td>Creates a radio button which is pre-checked.</td>
+</tr>
+<tr>
+<td><code>&lt;input type=&quot;text&quot; name=? size=?&gt;</code></td>
+<td>Creates a one-line text area.  Size sets length, in characters.</td>
+</tr>
+<tr>
+<td><code>&lt;input type=&quot;submit&quot; value=?&gt;</code></td>
+<td>Creates a submit button.  Value sets the text in the submit button.</td>
+</tr>
+<tr>
+<td><code>&lt;input type=&quot;image&quot; name=? src=? border=? alt=?&gt;</code></td>
+<td>Creates a submit button using an image.</td>
+</tr>
+<tr>
+<td><code>&lt;input type=&quot;reset&quot;&gt;</code></td>
+<td>Creates a reset button</td>
+</tr>
+</tbody>
+</table>
+<h3 id="html5-input-tag-attributes-not-all-browsers-support">HTML5 input tag attributes (not all browsers support)</h3>
+<p>Visit <a href="https://caniuse.com">https://caniuse.com</a> for details</p>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;input type=&quot;email&quot; name=?&gt;</code></td>
+<td>Sets a single-line textbox for email addresses</td>
+</tr>
+<tr>
+<td><code>&lt;input type=&quot;url&quot; name=?&gt; </code></td>
+<td>Sets a single-line textbox for URLs</td>
+</tr>
+<tr>
+<td><code>&lt;input type=&quot;number&quot; name=?&gt; </code></td>
+<td>Sets a single-line textbox for a number</td>
+</tr>
+<tr>
+<td><code>&lt;input type=&quot;range&quot; name=?&gt; </code></td>
+<td>Sets a single-line text box for a range of numbers</td>
+</tr>
+<tr>
+<td><code>&lt;input type=&quot;date/month/week/time&quot; name=?&gt; </code></td>
+<td>Sets a single-line text box with a calendar showing the date/month/week/time</td>
+</tr>
+<tr>
+<td><code>&lt;input type=&quot;search&quot; name=?&gt; </code></td>
+<td>Sets a single-line text box for searching</td>
+</tr>
+<tr>
+<td><code>&lt;input type=&quot;color&quot; name=?&gt; </code></td>
+<td>Sets a single-line text box for picking a color</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tables-use-only-for-data-layout---use-css-for-page-layout">Tables (use only for data layout - use CSS for page layout)</h3>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;table&gt; &lt;/table&gt;</code></td>
+<td>Creates a table</td>
+</tr>
+<tr>
+<td><code>&lt;tr&gt; &lt;/tr&gt;</code></td>
+<td>Sets off each row in a table</td>
+</tr>
+<tr>
+<td><code>&lt;td&gt; &lt;/td&gt;</code></td>
+<td>Sets off each cell in a row</td>
+</tr>
+<tr>
+<td><code>&lt;th&gt; &lt;/th&gt;</code></td>
+<td>Sets off the table header (a normal cell with bold, centered text)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="table-attributes-only-use-for-email-newsletters">Table attributes (only use for email newsletters)</h3>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;table&gt; &lt;/table&gt;</code></td>
+<td>Creates a table</td>
+</tr>
+<tr>
+<td><code>&lt;tr&gt; &lt;/tr&gt;</code></td>
+<td>Sets off each row in a table</td>
+</tr>
+<tr>
+<td><code>&lt;td&gt; &lt;/td&gt;</code></td>
+<td>Sets off each cell in a row</td>
+</tr>
+<tr>
+<td><code>&lt;th&gt; &lt;/th&gt;</code></td>
+<td>Sets off the table header (a normal cell with bold, centered text)</td>
+</tr>
+<tr>
+<td><code>&lt;table border=?&gt;</code></td>
+<td>Sets the width of the border around table cells</td>
+</tr>
+<tr>
+<td><code>&lt;table cellspacing=?&gt;</code></td>
+<td>Sets amount of space between table cells</td>
+</tr>
+<tr>
+<td><code>&lt;table cellpadding=?&gt;</code></td>
+<td>Sets amount of space between a cell&rsquo;s border and its contents</td>
+</tr>
+<tr>
+<td><code>&lt;table width=?&gt;</code></td>
+<td>Sets width of the table in pixels or as a percentage</td>
+</tr>
+<tr>
+<td><code>&lt;tr align=?&gt;</code></td>
+<td>Sets alignment for cells within the row (left/center/right)</td>
+</tr>
+<tr>
+<td><code>&lt;td align=?&gt;</code></td>
+<td>Sets alignment for cells (left/center/right)</td>
+</tr>
+<tr>
+<td><code>&lt;tr valign=?&gt;</code></td>
+<td>Sets vertical alignment for cells within the row (top/middle/bottom)</td>
+</tr>
+<tr>
+<td><code>&lt;td valign=?&gt;</code></td>
+<td>Sets vertical alignment for cell (top/middle/bottom)</td>
+</tr>
+<tr>
+<td><code>&lt;td rowspan=?&gt;</code></td>
+<td>Sets number of rows a cell should span (default=1)</td>
+</tr>
+<tr>
+<td><code>&lt;td colspan=?&gt;</code></td>
+<td>Sets number of columns a cell should span</td>
+</tr>
+<tr>
+<td><code>&lt;td nowrap&gt;</code></td>
+<td>Prevents lines within a cell from being broken to fit</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Source:</strong> <a href="https://web.stanford.edu/group/csp/cs21/">CS 21 - Stanford</a></p>
 
-	<h3 id="sử-dụng">Sử dụng</h3>
-<h1 id="markdown-cơ-bản">Markdown cơ bản</h1>
 
-
-
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
-        
-            </div> 
         
         </div>
         
@@ -533,11 +991,11 @@ text-align: center;
 </style>
 
 <span style="color: var(--text-color, black);">Share on: </span><div id="share-buttons">
-<div class="facebook" title="Share this on Facebook" onclick="window.open('http://www.facebook.com/share.php?u=https:\/\/minhlong.site\/markdown\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"/></svg></div>
-<div class="twitter" title="Share this on Twitter" onclick="window.open('http://twitter.com/intent/tweet?text=Sử dụng Markdown cơ bản&url=https:\/\/minhlong.site\/markdown\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg></div>
-<div class="linkedin" title="Share this on Linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=https:\/\/minhlong.site\/markdown\/&title=&summary=&source=');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></div>
+<div class="facebook" title="Share this on Facebook" onclick="window.open('http://www.facebook.com/share.php?u=https:\/\/minhlong.site\/cheatsheet\/markup-language\/html\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"/></svg></div>
+<div class="twitter" title="Share this on Twitter" onclick="window.open('http://twitter.com/intent/tweet?text=HTML&url=https:\/\/minhlong.site\/cheatsheet\/markup-language\/html\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg></div>
+<div class="linkedin" title="Share this on Linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=https:\/\/minhlong.site\/cheatsheet\/markup-language\/html\/&title=&summary=&source=');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></div>
 
-<div class="mail" title="Share this through Email" onclick="window.open('mailto:?&body=https:\/\/minhlong.site\/markdown\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z"/></svg></div>
+<div class="mail" title="Share this through Email" onclick="window.open('mailto:?&body=https:\/\/minhlong.site\/cheatsheet\/markup-language\/html\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z"/></svg></div>
 </div>
 
 
@@ -584,8 +1042,6 @@ text-align: center;
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -602,6 +1058,7 @@ text-align: center;
             
                 
                     
+                    
                 
                 
 
@@ -615,6 +1072,7 @@ text-align: center;
             
                 
                     
+                    
                 
                 
 
@@ -622,6 +1080,31 @@ text-align: center;
                     
                     
 
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
                     
             
         
@@ -636,29 +1119,6 @@ text-align: center;
 
                     
                     
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
                         
                     
                     
@@ -668,9 +1128,6 @@ text-align: center;
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -762,11 +1219,13 @@ text-align: center;
 		
 		    
 		    
+			<a class="nav nav-prev" href="/cheatsheet/markup-language/" title="Markup Language"> <i class="fa fa-chevron-left"></i></a>
+			
 		
 		
 		    
 		    
-			<a class="nav nav-next" href="/markdown/gioi-thieu/" title="Giới thiệu" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/cheatsheet/markup-language/markdown/" title="Markdown" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 			
 		
 	
@@ -799,3 +1258,4 @@ text-align: center;
 
   </body>
 </html>
+
