@@ -10,6 +10,11 @@ pagesIndex = [
         "title": "Python Cơ Bản",
         "tags": ["python", "syntax", "purple-se"]
     }, 
+    {
+        "index": "3",
+        "title": "Cheat Sheets",
+        "tags": ["markdown", "syntax", "blue-se"]
+    }, 
 ]
 
 function endsWith(str, suffix) {

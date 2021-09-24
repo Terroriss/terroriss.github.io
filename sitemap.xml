@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://minhlong.site/cheatsheet/markup-language/markdown/</loc>
+    <lastmod>2021-09-24T17:14:28+07:00</lastmod>
+  </url><url>
+    <loc>https://minhlong.site/cheatsheet/markup-language/</loc>
+    <lastmod>2021-09-24T17:13:23+07:00</lastmod>
+  </url><url>
+    <loc>https://minhlong.site/cheatsheet/</loc>
+    <lastmod>2021-09-24T17:03:46+07:00</lastmod>
+  </url><url>
     <loc>https://minhlong.site/markdown/gioi-thieu/</loc>
     <lastmod>2021-09-16T21:27:20+07:00</lastmod>
   </url><url>
@@ -17,16 +26,22 @@
     <loc>https://minhlong.site/python/</loc>
     <lastmod>2021-09-16T21:27:20+07:00</lastmod>
   </url><url>
+    <loc>https://minhlong.site/markdown/tham-khao/</loc>
+    <lastmod>2021-09-24T16:58:10+07:00</lastmod>
+  </url><url>
+    <loc>https://minhlong.site/tags/cheatsheet/</loc>
+    <lastmod>2021-09-24T17:03:46+07:00</lastmod>
+  </url><url>
+    <loc>https://minhlong.site/tags/syntax/</loc>
+    <lastmod>2021-09-24T17:03:46+07:00</lastmod>
+  </url><url>
+    <loc>https://minhlong.site/tags/</loc>
+    <lastmod>2021-09-24T17:03:46+07:00</lastmod>
+  </url><url>
     <loc>https://minhlong.site/tags/markdown/</loc>
     <lastmod>2021-09-16T21:27:20+07:00</lastmod>
   </url><url>
     <loc>https://minhlong.site/tags/python/</loc>
-    <lastmod>2021-09-16T21:27:20+07:00</lastmod>
-  </url><url>
-    <loc>https://minhlong.site/tags/syntax/</loc>
-    <lastmod>2021-09-16T21:27:20+07:00</lastmod>
-  </url><url>
-    <loc>https://minhlong.site/tags/</loc>
     <lastmod>2021-09-16T21:27:20+07:00</lastmod>
   </url><url>
     <loc>https://minhlong.site/contact/</loc>

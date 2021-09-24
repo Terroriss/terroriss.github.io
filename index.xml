@@ -8,6 +8,17 @@
     <language>vi</language>
     <lastBuildDate>Wed, 15 Sep 2021 20:28:41 +0700</lastBuildDate><atom:link href="https://minhlong.site/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Markdown</title>
+      <link>https://minhlong.site/cheatsheet/markup-language/markdown/</link>
+      <pubDate>Fri, 24 Sep 2021 17:14:28 +0700</pubDate>
+      
+      <guid>https://minhlong.site/cheatsheet/markup-language/markdown/</guid>
+      <description>Basic Syntax These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
+   Element Markdown Syntax     Heading  # H1 ## H2 ### H3    Bold  **bold text**    Italic  *italicized text*    Blockquote   blockquote    Ordered List  1. First item
+2. Second item</description>
+    </item>
+    
+    <item>
       <title>Giới thiệu</title>
       <link>https://minhlong.site/markdown/gioi-thieu/</link>
       <pubDate>Thu, 16 Sep 2021 21:27:20 +0700</pubDate>
