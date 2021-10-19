@@ -24,13 +24,13 @@
 
     <title>Demo AI | Minesweeper</title>
     
-    <link href="/css/main-style.css?1634651464" rel="stylesheet">
-    <script src="/js/jquery-3.3.1.min.js?1634651464"></script>
-    <link href="/css/dark-mode-btn.css?1634651464" rel="stylesheet">
-    <link href="/css/dark-mode.css?1634651464" rel="stylesheet">
-    <link href="/js/demo/minesweeper/minesweeper.css?1634651464" rel="stylesheet">
-    <script src="/js/demo/minesweeper/minesweeper.js?1634651464"></script>
-    <script src="/js/demo/minesweeper/minesweeperAI.js?1634651464"></script>
+    <link href="/css/main-style.css?1634652992" rel="stylesheet">
+    <script src="/js/jquery-3.3.1.min.js?1634652992"></script>
+    <link href="/css/dark-mode-btn.css?1634652992" rel="stylesheet">
+    <link href="/css/dark-mode.css?1634652992" rel="stylesheet">
+    <link href="/js/demo/minesweeper/minesweeper.css?1634652992" rel="stylesheet">
+    <script src="/js/demo/minesweeper/minesweeper.js?1634652992"></script>
+    <script src="/js/demo/minesweeper/minesweeperAI.js?1634652992"></script>
     </head>
 <boby class="background minesweeper-body" style="overflow-x: hidden;">
             <div class="game-play">
@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="game-setting">
-            <div style="position: fixed; right: 20px; top: 15px;">
+            <div style="position: absolute; right: 20px; top: 15px;">
                 <a class="demo-link" href="/" title="Home" >⌂</a>
             </div>
             <div class="game-init">
@@ -104,7 +104,7 @@
             }
             na.innerHTML = "New game: " + cell_columns + " x " + cell_rows + ": " + mines + " mines"
             gameconsole.appendChild(na)
-            gamestatus.innerHTML = "Playing..."
+            gamestatus.innerHTML = 'Playing<span class="one-dot">.</span><span class="two-dot">.</span><span class="three-dot">.</span>'
             set_game_board()
             create_game()
             window.addEventListener("resize", function() {
@@ -167,7 +167,7 @@
                                     revealed.add([x, y])
                                     endGame = true
                                     ai_stop()
-                                    gamestatus.innerHTML = "Lost"
+                                    gamestatus.innerHTML = "<p class='status-lost'>Lost</p>"
                                     target.classList.add("red-mine")
                                     show_all_mines()
                                 } else {
@@ -209,7 +209,7 @@
                                     if (game.won()) {
                                         endGame = true;
                                         ai_stop()
-                                        gamestatus.innerHTML = "Won"
+                                        gamestatus.innerHTML = "<p class='status-won'>Won</p>"
                                     }
                                 }
                             } else if (flags.has([x, y])) {
@@ -256,7 +256,7 @@
                     revealed = new ArraySet()
                     flags = new ArraySet()
                     na = document.createElement("span")
-                    gamestatus.innerHTML = "Playing..."
+                    gamestatus.innerHTML = 'Playing<span class="one-dot">.</span><span class="two-dot">.</span><span class="three-dot">.</span>'
                     na.innerHTML = "New game: " + cell_columns + " x " + cell_rows + ": " + mines + " mines"
                     gameconsole.innerHTML = ""
                     gameconsole.appendChild(na)

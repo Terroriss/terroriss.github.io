@@ -188,6 +188,7 @@ table, th, td {
 
 .game-status {
     color: white;
+    font-size: 22px;
 }
 
 .game-control {
@@ -208,7 +209,67 @@ table, th, td {
     margin-left: 0 !important;
 }
 
+.status-lost, .status-won {
+    font-weight: bold;
+    position: static;
+    font-size: 24px;
+}
 
+.status-lost {
+    color: red;
+}
+
+.status-won {
+    color: green;
+}
+
+.one-dot {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.0s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.0s;
+}
+
+.two-dot {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.2s;
+}
+
+.three-dot {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.3s;
+}
+
+@-webkit-keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 @media screen and (min-width: 950px) {
     .game-control > div > input {
@@ -236,8 +297,9 @@ table, th, td {
 }
 
 @media screen and (max-width: 555px) {
-    .minesweeper-body {
-    
+    .game-status {
+        margin-left: -150px;
+        margin-top: -25px;
     }
     
     .game-setting {
@@ -256,6 +318,7 @@ table, th, td {
     
     .game-init {
         width: 50%;
+        margin-left: -60px;
     }
     
     .game-play {
