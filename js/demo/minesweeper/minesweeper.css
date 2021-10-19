@@ -19,6 +19,11 @@ body {
     margin: 0;
 }
 
+.demo-link {
+    text-decoration: none;
+    color: var(--color-h1);
+}
+
 .minesweeper-body {
     display: flex;
     padding: 0;
