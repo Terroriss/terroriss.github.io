@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-207880070-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-207880070-1', {
+        cookie_flags: 'max-age=7200;secure;samesite=none'
+      });
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="description" content="">
+<meta name="author" content="Minh Long">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Demo | Minh Long</title>
+    
+    <link href="/css/main-style.css?1634643402" rel="stylesheet">
+    <script src="/js/jquery-3.3.1.min.js?1634643402"></script>
+    <link href="/css/dark-mode-btn.css?1634643402" rel="stylesheet">
+    <link href="/css/dark-mode.css?1634643402" rel="stylesheet">
+  </head>
+
+<boby class="background" style="overflow-x: hidden;">
+    
+
+
+    <div style="position: fixed; left: 20px; bottom: 20px;">
+        <input id="dark-toggle" class="dark-toggle" type="checkbox">
+<script>
+    $(function() {      
+        let notSupport = localStorage.getItem("not_sp");
+
+        if (notSupport == "true") {
+            var link = $("<link />",{
+             rel: "stylesheet",
+             type: "text/css",
+             href: "/css/dark-btn-mobile.css"
+           })
+           $('head').append(link);
+        }
+     });
+
+    const mode = localStorage.getItem("dark_mode");
+    const dark_btn = document.querySelector("#dark-toggle");
+    const bg = document.querySelector("body").classList
+    if (!bg.contains("background")) bg.add("background")
+    if (mode) {
+        if (mode == "true") {
+            bg.remove("light-mode")
+            dark_btn.checked = true;
+        } else {
+            bg.add("light-mode")
+            dark_btn.checked = false;
+        }
+    } else {
+        const device_color = window.matchMedia("(prefers-color-scheme: dark)");
+        if (device_color.matches) dark_mode(true);
+        else dark_mode(false);
+    }
+    
+    function dark_mode(bool) {
+        if (bool) {
+            bg.remove("light-mode")
+            localStorage.setItem("dark_mode", true);
+            dark_btn.checked = true;
+        } else {
+            bg.add("light-mode")
+            localStorage.setItem("dark_mode", false);
+            dark_btn.checked = false;
+        }
+    }
+       
+    dark_btn.addEventListener("click", function() {
+        const _bg = document.querySelector(".background").classList
+        if (!_bg.contains("background-transition"))
+            _bg.add("background-transition"); 
+        if (this.checked) dark_mode(true);
+        else dark_mode(false);
+    });
+</script>
+
+    </div>
+</body>
+</html>
