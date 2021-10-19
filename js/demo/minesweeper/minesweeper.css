@@ -3,6 +3,11 @@
     --board-width: 0;
     --cell: 0;
     --cell-font: 0;
+    --cell-color: rgba(62, 62, 62, 0.97);
+}
+
+.light-mode {
+    --cell-color: #bbbaba;
 }
 
 * {
@@ -10,11 +15,18 @@
 }
 
 body {
+    padding: 0;
+    margin: 0;
+}
+
+.minesweeper-body {
     display: flex;
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
     background-color: transparent;
+    width: 100%; 
+    height: 100vh; 
 }
 
 .game-play {
@@ -42,7 +54,7 @@ body {
 }
 
 .board {
-    background-color: red;
+    background-color: var(--code-text);
     height: var(--board-height);
     width: var(--board-width);
     padding-left: 1px;
@@ -63,7 +75,7 @@ body {
     width: var(--cell);
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    background-color: var(--cell-color);
     font-size: var(--cell-font);
     font-weight: bold;
 }
@@ -91,7 +103,6 @@ label {
     display: block;
     border-top: 1px black;
     border-bottom: 1px black;
-    background-color: blue;
 }
 
 table, th, td {
@@ -123,7 +134,8 @@ table, th, td {
 }
 
 .revealed {
-    background-color: rgb(245,245,245);
+    background-color: var(--background);
+    transition: background 500ms;
 }
 
 .cell-img {
@@ -217,6 +229,10 @@ table, th, td {
 }
 
 @media screen and (max-width: 555px) {
+    .minesweeper-body {
+    
+    }
+    
     .game-setting {
         width: 100%;
         height: auto;

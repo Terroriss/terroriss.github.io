@@ -120,7 +120,7 @@
 },
 {
 	"uri": "https://minhlong.site/contact/",
-	"title": "Html bai 1",
+	"title": "",
 	"tags": [],
 	"description": "",
 	"content": "About me\n"
@@ -133,6 +133,13 @@
 	"content": "day la trang chinh\n"
 },
 {
+	"uri": "https://minhlong.site/demo/",
+	"title": "Demo | Minh Long",
+	"tags": [],
+	"description": "",
+	"content": "\n\n"
+},
+{
 	"uri": "https://minhlong.site/categories/",
 	"title": "Categories",
 	"tags": [],
@@ -140,9 +147,9 @@
 	"content": ""
 },
 {
-	"uri": "https://minhlong.site/demo/",
-	"title": "Demo | Minh Long",
+	"uri": "https://minhlong.site/demo/ai/knowledge/minesweeper/",
+	"title": "Demo AI | Minesweeper",
 	"tags": [],
 	"description": "",
-	"content": "\n\n"
+	"content": "   Rows:  Cols:  Mines:            var r = document.querySelector(':root'); var gameplay = document.querySelector(\".game-play\") var board = document.querySelector(\".board\") var gameconsole = document.querySelector(\".game-console\") var gamestatus = document.querySelector(\".game-status\") var cell_size var cell_columns = check_number(document.getElementById(\"new_cols\").value, 3, 50) var cell_rows = check_number(document.getElementById(\"new_rows\").value, 3, 50) var mines = check_number(document.getElementById(\"new_mines\").value, 1, 2000) if (mines  cell_rows * cell_columns) mines = Math.floor(4 * (cell_rows * cell_columns) / 5); var game = new Minesweeper(cell_rows, cell_columns, mines) var ai = new MinesweeperAI(cell_rows, cell_columns) var i, j var endGame = false var move = null var revealed = new ArraySet() var flags = new ArraySet() var na = document.createElement(\"span\") var button_group = '' var btn_group_1 = document.getElementById(\"button-group-1\") var btn_group_2 = document.getElementById(\"button-group-2\") if (window.innerWidth '; for (j = 0; j `; } content += \"\"; } board.innerHTML = content; board.addEventListener(\"click\", function(e) { e.preventDefault(); const target = e.target; if (!endGame) { if (target.classList.contains(\"cell\")) { let x = parseInt(target.getAttribute(\"data-x\"), 10) let y = parseInt(target.getAttribute(\"data-y\"), 10) if (!revealed.has([x, y])) { if (game.is_mine([x, y])) { revealed.add([x, y]) endGame = true ai_stop() gamestatus.innerHTML = \"Lost\" target.classList.add(\"red-mine\") show_all_mines() } else { nearby = game.nearby_mines([x, y]) revealed.add([x, y]) ai.add_knowledge([x, y], nearby) let p = document.createElement(\"span\") if (nearby != 0) { p.innerHTML = nearby p.classList.add(\"count-\"+nearby) } target.classList.add(\"revealed\") target.appendChild(p) } } } } }) board.addEventListener(\"contextmenu\", function(e) { e.preventDefault(); const target = e.target; if (!endGame) { if (target.classList.contains(\"cell\")) { let x = parseInt(target.getAttribute(\"data-x\"), 10) let y = parseInt(target.getAttribute(\"data-y\"), 10) if (!revealed.has([x, y])) { let c = document.querySelector(`.cell[data-x=\"${x}\"][data-y=\"${y}\"]`) if (flags.has([x, y])) { flags.delete([x, y]) while (c.hasChildNodes()) c.firstChild.remove() c.classList.remove(\"flag\") } else { flags.add([x, y]) c.innerHTML = \"\" c.classList.add(\"flag\") game.mines_found = flags if (game.won()) { endGame = true; ai_stop() gamestatus.innerHTML = \"Won\" } } } else if (flags.has([x, y])) { flags.delete([x, y]) while (c.hasChildNodes()) c.firstChild.remove() c.classList.remove(\"flag\") } } } }); } function check_number(n, mn, mx) { let tmp = parseInt(n, 10) return tmp mx ? mx : tmp } function show_all_mines() { if (endGame) for (i = 0; i \" } } } } window.addEventListener(\"DOMContentLoaded\", () = { document.getElementById(\"new_game_button\").addEventListener(\"click\", function() { ai_stop() cell_columns = check_number(document.getElementById(\"new_cols\").value, 3, 50) cell_rows = check_number(document.getElementById(\"new_rows\").value, 3, 50) mines = check_number(document.getElementById(\"new_mines\").value, 1, 2000) if (mines  cell_rows * cell_columns) mines = Math.floor(4 * (cell_rows * cell_columns) / 5); game = new Minesweeper(cell_rows, cell_columns, mines) ai = new MinesweeperAI(cell_rows, cell_columns) endGame = false move = null revealed = new ArraySet() flags = new ArraySet() na = document.createElement(\"span\") gamestatus.innerHTML = \"Playing...\" na.innerHTML = \"New game: \" + cell_columns + \" x \" + cell_rows + \": \" + mines + \" mines\" gameconsole.innerHTML = \"\" gameconsole.appendChild(na) set_game_board() create_game() }) }) function ai_play() { if(!endGame) setInterval(aiMove, 100) } function ai_stop() { const interval_id = window.setInterval(function(){}, Number.MAX_SAFE_INTEGER); for (let i = 1; i \" for (let t = 0; t \"; let row = \"\"; for (let m = 0; m X\"; else row += \"\u0026nbsp\u0026nbsp\"; } content += row + \"\"; } content += \"\" let c = document.createElement(\"span\") c.innerHTML = content; gameconsole.appendChild(c) } function aiMove() { if(!endGame) { var message = document.createElement(\"span\") var move = ai.make_safe_move() if (move == null) { move = ai.make_random_move() if (move) message.innerHTML = \"No known safe moves, AI making random move.\" else message.innerHTML = \"No moves left to make.\" } else { message.innerHTML = \"AI making safe move.\" } gameconsole.appendChild(message) updateConsole() var mines_found = ai.mines var ai_flags = minusSet(mines_found, flags) if (move) { let evt = document.createEvent('MouseEvents'); evt.initMouseEvent('click', true, true, document.defaultView, 1, 0, 0, 0, 0, false, false, false, false, 0, null); document.querySelector(`.cell[data-x=\"${move[0]}\"][data-y=\"${move[1]}\"]`).dispatchEvent(evt); } const s_i = ai_flags[Symbol.iterator]() for (let c = 0; c "
 }]

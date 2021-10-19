@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Demo | Minh Long on Minh Long</title>
+    <link>https://minhlong.site/demo/</link>
+    <description>Recent content in Demo | Minh Long on Minh Long</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi</language>
+    <lastBuildDate>Wed, 15 Sep 2021 20:28:41 +0700</lastBuildDate><atom:link href="https://minhlong.site/demo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Demo AI | Minesweeper</title>
+      <link>https://minhlong.site/demo/ai/knowledge/minesweeper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://minhlong.site/demo/ai/knowledge/minesweeper/</guid>
+      <description>Rows:  Cols:  Mines:            var r = document.querySelector(&#39;:root&#39;); var gameplay = document.querySelector(&#34;.game-play&#34;) var board = document.querySelector(&#34;.board&#34;) var gameconsole = document.querySelector(&#34;.game-console&#34;) var gamestatus = document.querySelector(&#34;.game-status&#34;) var cell_size var cell_columns = check_number(document.getElementById(&#34;new_cols&#34;).value, 3, 50) var cell_rows = check_number(document.getElementById(&#34;new_rows&#34;).value, 3, 50) var mines = check_number(document.getElementById(&#34;new_mines&#34;).value, 1, 2000) if (mines  cell_rows * cell_columns) mines = Math.floor(4 * (cell_rows * cell_columns) / 5); var game = new Minesweeper(cell_rows, cell_columns, mines) var ai = new MinesweeperAI(cell_rows, cell_columns) var i, j var endGame = false var move = null var revealed = new ArraySet() var flags = new ArraySet() var na = document.</description>
+    </item>
+    
+  </channel>
+</rss>
