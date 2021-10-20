@@ -209,6 +209,12 @@ table, th, td {
     margin-left: 0 !important;
 }
 
+.game-go-home {
+    position: absolute; 
+    right: 20px; 
+    top: 15px;
+}
+
 .status-lost, .status-won {
     font-weight: bold;
     position: static;
@@ -297,6 +303,11 @@ table, th, td {
 }
 
 @media screen and (max-width: 555px) {
+    .game-go-home {
+        top: 5px;
+        right: 26.5px;
+    }
+    
     .game-status {
         margin-left: -150px;
         margin-top: -25px;

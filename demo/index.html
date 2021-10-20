@@ -15,6 +15,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="generator" content="Hugo 0.88.1" />
     <meta name="description" content="">
 <meta name="author" content="Minh Long">
@@ -23,15 +24,54 @@
 
     <title>Demo | Minh Long</title>
     
-    <link href="/css/main-style.css?1634652992" rel="stylesheet">
-    <script src="/js/jquery-3.3.1.min.js?1634652992"></script>
-    <link href="/css/dark-mode-btn.css?1634652992" rel="stylesheet">
-    <link href="/css/dark-mode.css?1634652992" rel="stylesheet">
-  </head>
-
-<boby class="background" style="overflow-x: hidden;">
+    <link href="/css/main-style.css?1634704945" rel="stylesheet">
+    <script src="/js/jquery-3.3.1.min.js?1634704945"></script>
+    <link href="/css/dark-mode-btn.css?1634704945" rel="stylesheet">
+    <link href="/css/dark-mode.css?1634704945" rel="stylesheet">
     
-
+        <link href="/css/demopage.css" rel="stylesheet">
+<boby class="background demo-body" style="overflow-x: hidden;">
+    <h1 class="demo-title">Demo</h1>
+    <div class="demo-block">
+        <h2>Website</h2>
+        <div class="block-grid">
+            <div class="block-card">
+                <div class="block-des">
+                    <button class="close-des">✕</button>
+                    <a class="demo-link" href="https://django-commerce-demo.herokuapp.com">
+                    <h2>Auction Page</h2>
+                    </a>
+                </div>
+                <a class="demo-link" href="https://django-commerce-demo.herokuapp.com">
+                <iframe src="https://django-commerce-demo.herokuapp.com" width = "100%" height = "450px">
+                </iframe>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="demo-block">
+        <h2>Artificial Intelligence</h2>
+        <div class="block-grid">           
+            <div class="block-card">
+                <div class="block-des">
+                    <button class="close-des">✕</button>
+                    <a class="demo-link" href="ai/knowledge/minesweeper">
+                    <h2>Minesweeper Solver Using Knowledge-based</h2>
+                    </a>
+                </div>
+                <a class="demo-link" href="ai/knowledge/minesweeper">
+                <iframe src="ai/knowledge/minesweeper" width = "100%" height = "450px">
+                </iframe>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    $(document).on('click', '.close-des', function () {
+        $(this).parents('.block-des').fadeOut();
+    });
+    </script>
 
     <div style="position: fixed; left: 20px; bottom: 20px;">
         <input id="dark-toggle" class="dark-toggle" type="checkbox">
