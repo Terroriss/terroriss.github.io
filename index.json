@@ -137,7 +137,14 @@
 	"title": "Demo | Minh Long",
 	"tags": [],
 	"description": "",
-	"content": " Demo Website ✕ Auction Page        Artificial Intelligence ✕ Minesweeper Solver Using Knowledge-based         $(document).on('click', '.close-des', function () { $(this).parents('.block-des').fadeOut(); });  "
+	"content": " Demo Artificial Intelligence ✕ Minesweeper Solver Using Knowledge-based        Website ✕ Auction Page      ✕ Simple Code Editor         $(document).on('click', '.close-des', function () { $(this).parents('.block-des').fadeOut(); }); $( document ).ready(function() { masonryGrid(); }); $( document ).on('resize', function() { masonryGrid(); }); function masonryGrid() { var all_grid = document.querySelectorAll('.block-grid'); all_grid.forEach(grid = { var rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap')), rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows')), items = grid.querySelectorAll('.block-card'); items.forEach(item = { let rowSpan = Math.ceil((item.getBoundingClientRect().height+rowGap)/(rowHeight+rowGap)); item.style.gridRowStart = 'span ' + rowSpan; }); }); }  "
+},
+{
+	"uri": "https://minhlong.site/demo/editor/",
+	"title": "Demo | Minh Long",
+	"tags": [],
+	"description": "",
+	"content": "  .darkmode-container { top: 6px; right: 20px; left: auto; bottom: auto; } .dark-toggle { transform: scale(.7); } .dark-toggle:checked { transform: scale(.525); }          HTML CSS JavaScript Result  HTML     CSS     JavaScript        Console  ˅       var eventMethod = window.addEventListener ? \"addEventListener\" : \"attachEvent\"; var eventer = window[eventMethod]; var messageEvent = eventMethod === \"attachEvent\" ? \"onmessage\" : \"message\"; const myConsole = document.querySelector(\".editor-console\"); eventer(messageEvent, function (e) { // if (e.origin !== 'http://the-trusted-iframe-origin.com') return; const raw = e.data || e.message, data = JSON.parse(raw), newMsg = document.createElement(\"div\"), msgContent = document.createTextNode(data[\"msg\"]); newMsg.appendChild(msgContent); myConsole.appendChild(newMsg); myConsole.scrollTop = myConsole.scrollHeight; }); function toggleConsole() { const is_hidden = myConsole.classList.contains(\"hidden\"); if (is_hidden) showConsole(); else hideConsole(); } function showConsole() { myConsole.classList.remove(\"hidden\"); } function hideConsole() { myConsole.classList.add(\"hidden\"); }  "
 },
 {
 	"uri": "https://minhlong.site/categories/",

@@ -23,11 +23,27 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     <title>Demo AI | Minesweeper</title>
+    <style>
+        .darkmode-container {
+            position: fixed; 
+            left: 20px; 
+            bottom: 20px;
+        }
+        
+        .background {
+            height: 100%;
+            width: 100%;
+            display: block;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
     
-    <link href="/css/main-style.css?1634704945" rel="stylesheet">
-    <script src="/js/jquery-3.3.1.min.js?1634704945"></script>
-    <link href="/css/dark-mode-btn.css?1634704945" rel="stylesheet">
-    <link href="/css/dark-mode.css?1634704945" rel="stylesheet">
+    
+    <link href="/css/main-style.css?1635005710" rel="stylesheet">
+    <script src="/js/jquery-3.3.1.min.js?1635005710"></script>
+    <link href="/css/dark-mode-btn.css?1635005710" rel="stylesheet">
+    <link href="/css/dark-mode.css?1635005710" rel="stylesheet">
     
         <link href="/js/demo/minesweeper/minesweeper.css" rel="stylesheet">
     <script src="/js/demo/minesweeper/minesweeper.js"></script>
@@ -330,7 +346,7 @@
             }
         </script>
 
-    <div style="position: fixed; left: 20px; bottom: 20px;">
+    <div class="darkmode-container">
         <input id="dark-toggle" class="dark-toggle" type="checkbox">
 <script>
     $(function() {      
