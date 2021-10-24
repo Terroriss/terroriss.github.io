@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Stylesheet Language on Minh Long</title>
-    <link>https://minhlong.site/cheatsheet/stylesheet-language/</link>
-    <description>Recent content in Stylesheet Language on Minh Long</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>vi</language>
-    <lastBuildDate>Fri, 24 Sep 2021 21:12:44 +0700</lastBuildDate><atom:link href="https://minhlong.site/cheatsheet/stylesheet-language/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>CSS</title>
-      <link>https://minhlong.site/cheatsheet/stylesheet-language/css/</link>
-      <pubDate>Fri, 24 Sep 2021 19:30:24 +0700</pubDate>
-      
-      <guid>https://minhlong.site/cheatsheet/stylesheet-language/css/</guid>
-      <description>Font Properties    Name Desciption Example     Font-Family  Changes the font family of certain words, sentences,
-paragraphs, etc.  P { font-family: &amp;ldquo;New Century Schoolbook&amp;rdquo;, Times, serif; }   Font-Style Changes text: normal, oblique, and italics.  H1 { font-style: oblique; } P { font-style: normal; }    Font-Variant Used to display font in normal or small-caps. SPAN { font-variant: small-caps; }   Font-Weight Used to specify the weight of the font.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Stylesheet Language on Minh Long</title><link>https://minhlong.site/cheatsheet/stylesheet-language/</link><description>Recent content in Stylesheet Language on Minh Long</description><generator>Hugo -- gohugo.io</generator><language>vi</language><lastBuildDate>Fri, 24 Sep 2021 21:12:44 +0700</lastBuildDate><atom:link href="https://minhlong.site/cheatsheet/stylesheet-language/index.xml" rel="self" type="application/rss+xml"/><item><title>CSS</title><link>https://minhlong.site/cheatsheet/stylesheet-language/css/</link><pubDate>Fri, 24 Sep 2021 19:30:24 +0700</pubDate><guid>https://minhlong.site/cheatsheet/stylesheet-language/css/</guid><description>Font Properties Name Desciption Example Font-Family Changes the font family of certain words, sentences,
+paragraphs, etc. P { font-family: &amp;ldquo;New Century Schoolbook&amp;rdquo;, Times, serif; } Font-Style Changes text: normal, oblique, and italics. H1 { font-style: oblique; } P { font-style: normal; } Font-Variant Used to display font in normal or small-caps. SPAN { font-variant: small-caps; } Font-Weight Used to specify the weight of the font.</description></item></channel></rss>
