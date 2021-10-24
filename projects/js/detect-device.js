@@ -56,7 +56,6 @@ if (!Object.entries) {
 };
 
 Object.entries(device).forEach(([key, value]) => {
-  console.log(key)
   const td = document.getElementById(key);
   td.innerText = value ? "✔️" : "❌";
 });
