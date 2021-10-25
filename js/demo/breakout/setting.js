@@ -1,0 +1,1 @@
+var screenHeight=window.screen.availHeight,screenWidth=window.screen.availWidth,gameBoardWidth=450,gameBoardHeight=300,gameBoardTop=screenHeight/2-gameBoardHeight/2,gameBoardLeft=screenWidth/2-gameBoardWidth/2,isChrome=-1!=navigator.userAgent.indexOf("Chrome"),gameBarHeight=100,gameBarTop=.9*screenHeight,ballSize=50,dx=50;

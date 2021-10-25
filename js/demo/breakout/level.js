@@ -1,0 +1,1 @@
+var LEVEL={1:{rows:2,cols:5,map:"**********".split("")},2:{rows:4,cols:5,map:"********************".split("")},3:{rows:4,cols:10,map:"****************************************".split("")},4:{rows:2,cols:4,map:"*  *   *  *".split(" ")},5:{rows:3,cols:10,map:"*  *  *  *  *   *  *  *  *  * *  *  *  *  * ".split(" ")}};
