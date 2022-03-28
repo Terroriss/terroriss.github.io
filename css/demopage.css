@@ -1,1 +1,86 @@
-.background{width:100%;margin:0}.background.demo-body{display:flex;flex-direction:column}.demo-title{margin:auto;margin-top:30px;display:block;color:var(--color-h1)}.demo-block>h2{margin-left:20px;color:var(--color-heading)}.block-grid{padding:20px;display:grid;grid-template-columns:repeat(1,minmax(100px,1fr));grid-gap:1em;grid-auto-rows:0}.demo-link{text-decoration:none}.block-card{position:relative;display:inline-block;text-decoration:none;box-shadow:0 2px 5px rgba(0,0,0,.1);transition:all .1s ease-in;break-inside:avoid;float:left}.block-card.iframe{height:450px}.block-card>.block-des{position:absolute;left:0;top:0;padding:10px;background:var(--overlay-color);width:calc(100% - 20px)}.block-card>.block-des>a>h2{color:var(--text-color)}.block-card>.block-des>.close-des{position:absolute;right:5px;background:transparent;border:0;color:var(--color-h1)}@media(min-width:500px){.block-grid{grid-template-columns:repeat(2,minmax(100px,1fr))}}@media(min-width:900px){.block-grid{grid-template-columns:repeat(3,minmax(100px,1fr))}}@media(min-width:1200px){.block-grid{grid-template-columns:repeat(4,minmax(100px,1fr))}}
+.background {
+    width: 100%;
+    margin: 0;
+}
+
+.background.demo-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.demo-title {
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+    color: var(--color-h1);
+}
+
+.demo-block > h2 {
+    margin-left: 20px;
+    color: var(--color-heading);
+}
+.block-grid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px,1fr));;
+    grid-gap: 1em;
+    grid-auto-rows: 0;
+}
+
+.demo-link {
+    text-decoration: none;
+}
+
+.block-card {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease-in;
+	break-inside: avoid;
+	float: left;
+}
+
+.block-card.iframe {
+    height: 450px;
+}
+
+.block-card > .block-des {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    background: var(--overlay-color);
+    width: calc(100% - 20px);
+}
+
+.block-card > .block-des > a > h2 {
+    color: var(--text-color);
+}
+
+.block-card > .block-des > .close-des {
+    position: absolute;
+    right: 5px;
+    background: transparent;
+    border: none;
+    color: var(--color-h1);
+}
+
+@media (min-width: 500px) {
+  .block-grid {
+    grid-template-columns: repeat(2, minmax(100px,1fr));;
+  }
+}
+
+@media (min-width: 900px) {
+  .block-grid {
+    grid-template-columns: repeat(3, minmax(100px,1fr));;
+  }
+}
+
+@media (min-width: 1200px) {
+  .block-grid {
+    grid-template-columns: repeat(4, minmax(100px,1fr));;
+  }
+}
+

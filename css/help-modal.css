@@ -1,1 +1,157 @@
-.help-modal{position:fixed;width:100%;height:100%;background:var(--help-modal);top:0;left:0;z-index:10000}.hidden{display:none}.help-title{position:absolute;top:5px;left:25px;font-weight:700;color:var(--background)}.help-panel{height:50%;width:60%;max-width:600px;background-color:#6a6a6a;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border-radius:6px}.help-panel>button{float:right;margin-top:5px;margin-right:5px;width:25px;height:25px;background:transparent;border:0}.help-panel>button>i{margin:auto;color:var(--background);font-size:20px}.help-btn{position:absolute;top:calc(-2rem - 15px);left:0;background:var(--main-active);height:2.15rem;width:2.15rem;text-align:center;padding-top:3px;padding-right:1.5px;border-radius:50px}.help-btn>div>i{color:var(--background)}.help-info{width:100%;height:100%}.help-info>.color-info{width:calc(100% - 50px);position:absolute;padding-bottom:20px;top:50%;left:25px;transform:translateY(-50%)}.color-info>div>.child{position:static;box-shadow:0 4px 8px rgba(0,0,0,.1),0 -4px 8px #000}.color-info>.c_info{display:flex;align-items:center;margin-top:20px}.c_info>.info-txt{margin-bottom:4px;padding-left:10px;color:var(--background)}.color-demo{width:20px;height:30px}.help-link{color:#2b2b2b;text-decoration:underline;cursor:pointer}.info-txt>strong{font-size:1.045rem}@media screen and (max-width:768px){.help-panel{width:100%;height:330px}.help-panel>button{margin-top:10px;margin-right:10px}.help-title{top:10px}}@media screen and (max-width:460px){.help-panel{height:500px}}@media screen and (max-height:579px) and (min-width:767px){.help-panel{height:290px}}@media screen and (max-height:630px) and (min-width:444px){.help-panel{height:350px}}@media screen and (max-height:289px),screen and (max-width:276px){.help-modal{display:none}.help-btn{display:none}}
+.help-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: var(--help-modal);
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.hidden {
+    display: none;
+}
+
+.help-title {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    font-weight: bold;
+    color: var(--background);
+}
+
+.help-panel {
+    height: 50%;
+    width: 60%;
+    max-width: 600px;
+    background-color:  #6a6a6a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+}
+
+.help-panel > button {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: none;
+}
+
+.help-panel > button > i {
+    margin: auto;
+    color: var(--background);
+    font-size: 20px;
+}
+
+.help-btn {
+    position: absolute;
+    top: calc(-2rem - 15px);
+    left: 0;
+    background: var(--main-active);
+    height: 2.15rem;
+    width: 2.15rem;
+    text-align: center;
+    padding-top: 3px;
+    padding-right: 1.5px;
+    border-radius: 50px;
+}
+
+.help-btn > div > i {
+    color: var(--background);
+}
+
+.help-info {
+    width: 100%;
+    height: 100%;
+}
+
+.help-info > .color-info {
+    width: calc(100% - 50px);
+    position: absolute;
+    padding-bottom: 20px;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+}
+
+.color-info > div > .child {
+    position: static;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px -4px 8px rgba(0, 0, 0, 1);
+}
+
+.color-info > .c_info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.c_info > .info-txt {
+    margin-bottom: 4px;
+    padding-left: 10px;
+    color: var(--background);
+}
+
+.color-demo {
+    width: 20px;
+    height: 30px;
+    
+}
+
+.help-link {
+    color: #2b2b2b; 
+    text-decoration: underline; 
+    cursor: pointer;
+}
+
+.info-txt > strong {
+    font-size: 1.045rem;
+}
+
+@media screen and (max-width: 768px) {
+    .help-panel {
+        width: 100%;
+        height: 330px;
+    }
+    
+    .help-panel > button {
+        margin-top: 10px;
+        margin-right: 10px;
+    } 
+    
+    .help-title {
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .help-panel {
+        height: 500px;
+    }
+}
+
+@media screen and (max-height: 579px) and (min-width: 767px) {
+    .help-panel {
+        height: 290px; 
+    }
+}
+
+@media screen and (max-height: 630px) and (min-width: 444px) {
+    .help-panel {
+        height: 350px;
+    }
+}
+
+@media screen and (max-height: 289px), screen and (max-width: 276px) { 
+    .help-modal {
+        display: none;
+    }
+    
+    .help-btn {
+        display: none;
+    }
+}
