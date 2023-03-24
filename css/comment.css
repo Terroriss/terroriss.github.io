@@ -1,0 +1,22 @@
+.auth-modal-panel-banner-container img {
+    margin: 0;
+}
+
+.widget-auth-form-input-block input,
+.pass-container input {
+    box-shadow: none;
+    background: none;
+    margin: 0;
+}
+
+.pass-container input {
+    width: 60%;
+}
+
+.widget-auth-form-input-block label {
+    margin: 0;
+}
+
+.auth-modal-panel.auth-register-modal-panel .auth-modal-panel-form-container {
+    padding: 50px 30px 20px;
+}
