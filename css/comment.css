@@ -29,3 +29,6 @@ body.background .announcement-list {
     position: fixed;
 }
 
+body.background #widget-comment-root .loaderContainer {
+    height: 150px;
+}
