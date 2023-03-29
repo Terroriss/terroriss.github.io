@@ -32,3 +32,9 @@ body.background .announcement-list {
 body.background #widget-comment-root .loaderContainer {
     height: 150px;
 }
+
+body.background:not(.light-mode) #widget-comment-root .loaderContainer .loader {
+    border: 2px solid #d7d7d7;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}

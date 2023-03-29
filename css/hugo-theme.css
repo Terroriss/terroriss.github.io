@@ -6,14 +6,13 @@
 .progress ul {
   list-style: none;
   margin: 0;
-  padding: 0 15px;
+  padding: 10 17px;
 }
 
 #TableOfContents {
     font-size: 13px !important;
     max-height: 85vh;
     overflow: auto;
-    padding: 15px 5px !important;
 }
 
 #TableOfContents > ul > li > a {
