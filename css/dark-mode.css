@@ -27,6 +27,7 @@
     --deck-label: #222;
     --help-modal: rgba(0, 0, 0, 0.7);
     --text-editor-menu: #333;
+    --popup-background: #3c3c3c;
 }
 
 .light-mode {
@@ -57,4 +58,5 @@
     --deck-label: #f7f7f7;
     --help-modal: rgba(255, 255, 255, 0.7);
     --text-editor-menu: #bfbfbf;
+    --popup-background: #fff;
 }

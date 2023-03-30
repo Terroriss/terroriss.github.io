@@ -1,0 +1,28 @@
+li.dd-item.close ul {
+    display: none !important;
+}
+
+.dd-item.open ul {
+    display: block;
+}
+
+text-code {
+    padding: 0px;
+    font-family: monospace;
+    font-weight: 400;
+    color: black;
+    background-color: inherit !important;
+}
+
+.swal2-container.swal2-shown {
+    background-color: var(--overlay-color) !important;
+}
+
+.swal2-popup .swal2-content {
+    color: var(--text-color) !important;
+}
+
+.swal2-popup  {
+    background-color: var(--popup-background) !important;
+    box-shadow: 0 0 10px var(--box-shadow1) !important;
+}

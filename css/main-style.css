@@ -135,14 +135,6 @@ p {
     margin-left: 10px;
 }
 
-text-code {
-  padding: 0px;
-  font-family: monospace;
-  font-weight: 400;
-  color: black;
-  background-color: inherit !important;
-}
-
 .child > p {
     top: -16px;
     right: 16px;
