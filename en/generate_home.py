@@ -81,12 +81,13 @@ for path in folders:
                     color = value
                 if "draft:" in line and 'true' in line:
                     draft = True
+        en_articles.append(path)
+        index = len(en_articles)
         if draft == False:
-            en_articles.append(path)
             child_cards = '<div class="child"></div>' * vi_card_nums
             en_file_content += \
 f'''
-<div class="article-block" data-index="1">    
+<div class="article-block" data-index="{index}">    
     <a href="{path}/">
         <div class="card {color}-series" style="--cards:{vi_count};">
             <div class="child">
@@ -115,12 +116,13 @@ f'''
                     color = value
                 if "draft:" in line and 'true' in line:
                     draft = True
+        vi_articles.append(path)
+        index = len(vi_articles)
         if draft == False:
-            vi_articles.append(path)
             child_cards = '<div class="child"></div>' * vi_card_nums
             vi_file_content += \
 f'''
-<div class="article-block" data-index="1">    
+<div class="article-block" data-index="{index}">    
     <a href="{path}/">
         <div class="card {color}-series" style="--cards:{vi_count};">
             <div class="child">
