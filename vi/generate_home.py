@@ -17,8 +17,7 @@ languageCode: "vi"
 '''
 
 en_file_content = \
-'''
----
+'''---
 title: ""
 date: 2021-09-15T20:28:41+07:00
 layout: homepage
