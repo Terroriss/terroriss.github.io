@@ -1,5 +1,6 @@
 import os
 import re
+import json
 
 current_directory = os.getcwd()
 
@@ -25,6 +26,9 @@ url: ""
 languageCode: "en"
 ---
 '''
+
+en_dicts = []
+vi_dicts = []
 
 en_articles = []
 vi_articles = []
@@ -71,6 +75,7 @@ for path in folders:
         color = ""
         title = ""
         draft = False
+        tags = []
         with open(en_index_path, 'r') as file:
             for line in file:
                 if "title:" in line:
@@ -81,9 +86,18 @@ for path in folders:
                     color = value
                 if "draft:" in line and 'true' in line:
                     draft = True
+                if "tags:" in line:
+                    start = line.find('[')
+                    end = line.find(']')
+                    tags = line[start+1:end].replace("'", "").split(", ")
         en_articles.append(path)
         index = len(en_articles)
         if draft == False:
+            en_dicts.append({
+                "index": index,
+                "title": title,
+                "tags": tags
+            })
             child_cards = '<div class="child"></div>' * vi_card_nums
             en_file_content += \
 f'''
@@ -106,6 +120,7 @@ f'''
         color = ""
         title = ""
         draft = False
+        tags = []
         with open(vi_index_path, 'r') as file:
             for line in file:
                 if "title:" in line:
@@ -116,9 +131,18 @@ f'''
                     color = value
                 if "draft:" in line and 'true' in line:
                     draft = True
+                if "tags:" in line:
+                    start = line.find('[')
+                    end = line.find(']')
+                    tags = line[start+1:end].replace("'", "").split(", ")
         vi_articles.append(path)
         index = len(vi_articles)
         if draft == False:
+            vi_dicts.append({
+                "index": index,
+                "title": title,
+                "tags": tags
+            })
             child_cards = '<div class="child"></div>' * vi_card_nums
             vi_file_content += \
 f'''
@@ -147,3 +171,35 @@ with open("_index.vi.html", "w") as f:
 
 with open("_index.en.html", "w") as f:
     f.write(en_file_content)
+
+vi_json = json.dumps(vi_dicts, ensure_ascii=False)
+en_json = json.dumps(en_dicts, ensure_ascii=False)
+
+with open("../static/js/en-pages.js", "w") as f:
+    f.write("const pagesIndex = " + en_json)
+
+with open("../static/js/vi-pages.js", "w") as f:
+    f.write("const pagesIndex = " + vi_json)
+
+import requests
+
+comment_widget_url = "https://user.minhlong.site/widget/comment/index.html"
+
+r = requests.get(comment_widget_url)
+
+comment_widget_html = r.text
+
+comment_widget = ""
+for line in comment_widget_html.split('\n'):
+    # Find the type and attributes of the element
+    match = re.search(r'<script|<link', line)
+    if match:
+        comment_widget += line + "\n"
+
+comment_widget = re.sub(r'(href|src)="(?!https?:\/\/)', r'\1="https://user.minhlong.site', comment_widget)
+comment_widget = comment_widget.replace('crossorigin', 'crossorigin="anonymous"')
+
+# Write the JSON to a file
+with open("../layouts/partials/custom-comments.html", "w") as f:
+    f.write(comment_widget)
+    f.write('<div id="widget-comment-root"></div>')

@@ -1,1 +1,1 @@
-const pagesIndex=[{index:"",title:"",tags:[]}];
+const pagesIndex=[];
